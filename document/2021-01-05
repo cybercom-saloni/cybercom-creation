@@ -24,7 +24,7 @@ v.changes are saved with the name :-$ git commit -m "added echo in index file"
 vi.push changes to origin:-$ git push origin batman-bike
 vii.switch to origin:-$ git checkout main
 viii.to merge the files -$ git merge --no-ff origin/batman-bike
-ix.to push file on github:- $git push filename
+ix.to push file on github:- $git push origin main
 
 extra command by google:-
 git --version:- to check version
