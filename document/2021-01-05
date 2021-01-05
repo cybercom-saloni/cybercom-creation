@@ -1,1 +1,38 @@
+I get to know from document and google that GIT  is Distributed Version Controller.
+GIT is a open software.
+There is a difference between GIT-HUB code hosting service based on GIT version controller.
+GIT-HUB is a paid software sometimes.It is web based host for repositiory.
+I learned  to create GIT account.And its use.
 
+I learned following commands in GIT-
+1.ssh-keygen -t rsa -C "salonimaheshwari05@gmail.com" :- to assign username.
+2.cat ~/.ssh/id_rsa.pub:- to find SSH key and paste on GIT-HUB.
+
+3. for coloning the project I followed these steps:-
+i.first right click on the folder location then opened GIT BASH.
+ii.then i made a directory batman by command:- mkdir batman and on GIT-HUB i made a repo.
+iii.i copied the SSH key form code.
+iv.i cloned the batman repo by the same command:-git clone git@github.com:chirag-cybercom/batman.git batman/
+v.to move in particular directory-cd directoryname
+
+4.
+i.for nickname of repo i used -git remote -v command.
+ii.suppose the nickname is origin it will be fetch by-:$ git fetch origin
+iii.to check current version:-$ git status
+iv.to add the file:-$ git add index.php
+v.changes are saved with the name :-$ git commit -m "added echo in index file"
+vi.push changes to origin:-$ git push origin batman-bike
+vii.switch to origin:-$ git checkout main
+viii.to merge the files -$ git merge --no-ff origin/batman-bike
+
+
+extra command by google:-
+git --version:- to check version
+git init:- to make a blank repositiory of name git.it is hidden in folder .git
+git add . :- to process all files on stage
+git log:- who made the changes on which time
+git config --global.user.name "saloni" :-assign name of user
+git config --global.user.name "salonimaheshwari05@gmail.com" :-assign user email of user
+
+
+ 
