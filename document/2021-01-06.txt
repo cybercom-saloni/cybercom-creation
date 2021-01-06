@@ -18,7 +18,7 @@
 
 9. for all the repo git config --global user.name "saloni"
 
-10.git push origin main :- to reflect the chnages in repo.
+10.git push origin main :- to reflect the changes in repo.
  
 11.git log:- see all the files when it is modified and generates a unique commit id.
 
