@@ -1,0 +1,43 @@
+	Summary of 05jan and 06 jan and some new commands by google
+1.ls:- to show all folder.
+2.ls-lart :- to show the hidden folder along with all folder.  
+3.git init:-initialize empty directory.
+4.git status :- status of file.
+5.git add filename :- add file in the staging area.
+6.git commit :- to save the file
+7.git touch :- to create blank files.
+8.git add -A:- add all the files in the staging area.
+9.git commit -m "message"- another way for commit.
+10.clear :- to clear terminal
+11.git checkout filename:-to recovery old data.It matches all the files with the last working directory.
+12.git checkout -f:- all files are matched with last working directory.
+13.git log:- shows how much you committed.
+14.git log -p -number like (git log -p -1):- git to filter git log commit.(it shows last record that modified).
+15.git diff:-it compares working directory with staging area.
+16.git diff --staged:-to compare staging area with last commit.
+17.git commit -a -m "message":- directly commit all the files.
+18.git rm filename:-remove a file form working directory and staging area.
+19.git rm --cached filename:-remove a file form working istaging area.
+20.git status -s:- show status in short.
+	           -  if then we apply add command then 2  M  are there first  M is shifted towards left side.This shows  staging area.And 2nd M is red one shows that it is in working directory.
+21.git status:- touch .gitignore make a file to ignore a file.
+---->>>>BRANCH:-creates copy of the main branch.<<<------
+22.git branch branchname:- it creates the branch.
+23.git branch:- to know the branches.
+24.git checkout branchname:- switched to branch.
+25.git merge branch name:-merge two branches-first switch to main branch.
+26.git checkout -b branchname:-makes new branch and switched to that new branch by only one command.
+---->>>>REMOTE REPO:-push local repo<<<-----
+27.git remote add nickname origin:-to push local repo on the git hub.
+28.git remote :- to see name of remote directory.
+29.git remote -v:- see the url of remote directory.
+----->>>ssh:-<<<<-------
+30.git remote set-url branch name sshkey :- set the url
+31.git push -u branchname mainbranch:-push in the repo
+32.git push:-push in the main branch.
+33.git clone sshkey:- make the copy of repo on local machine with same name of repo. 
+34.git clone sshkey nickname:-make the copy of repo on local machine with nickname of repo. 
+35. git squash:-cleans the collected history.
+36.git revert -m 1 uniquecommitid-revert the changes.
+37.git config user.name "saloni":-for current repo 
+38.git config --global user.name "saloni":-for all the repo
