@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS CODING CHALLENGE 1</title>
+</head>
+<body>
+	<h1>JS CODING CHALLENGE 1</h1>
+</body>
+<script type="text/javascript">
+// Storing Mark's and John's mass and weight
+var johnMass=prompt("enter John mass in Kg");
+var johnHeight=prompt("enter John height in meter");
+var markMass=prompt("enter Mark mass  in Kg");;
+var markHeight=prompt("enter Mark height in meter");;
+
+var johnBMI=johnMass/(johnHeight*johnHeight);
+var markBMI=markMass/(markHeight*markHeight);
+
+var markBMIHigher=markBMI>johnBMI;
+console.log("Mark's BMI: "+markBMI);
+console.log("johnBMI's BMI: "+johnBMI);
+console.log("Is Mark's BMI higher than John's? "+markBMIHigher);
+</script>
+</html>

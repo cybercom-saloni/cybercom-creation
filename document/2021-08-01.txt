@@ -1,0 +1,53 @@
+JAVASCRIPT
+
+2ways to add js into a website:-
+1.inline javascripts
+2.external javascript
+
+shift+ctrl+j ->to open console.
+it is always preferable the js code should in external javascript  because it keeps html and js code seperate.
+
+-->What is JavaScript?
+JavaScript is a lightweighted,cross-platform ,object-oriented computer programming language. 
+
+lightweight:-the language does not need memory of computer.Simple in Syntax.
+cross-platform:-can be used for multiple languages.
+object-oriented:-language that based on object.
+
+Out of 3,i.e. HTML,CSS and JAVASCRIPT,JAVASCRIPT is the core technology.
+
+JavaScript used in two ways:-
+1.client-side:-traditionally used on browser only.
+2.server-side:- By node.js javascript can be used on server.
+
+JS Framework/libraries like React ,Angular,jQuery.
+
+console.log(varname):-print value in console.
+
+RESPONSIBILITY---->
+1.HTML->content of webpage.We can call it like NOUN.
+2.CSS->styling the webpage.We can call it like ADJECTIVE.
+3.JS->Programming the webpage.We can call it like VERBS.
+
+Different Version of JS:-
+1.ES5
+2.ES6/ES2015
+3.ES7/ES2016
+4.ES8/ES2017
+
+Variable:- is a container which stores the value.
+Declartion of variable:- var varname=' varvalue';
+
+Data Types in JS:-
+1.Number:floating point numbers.
+2.String:sequence of character used for text.
+3.Boolean:Logical Datatype that can only be true or false.
+4.Undefined:Automatically assigned data type of a variable that doesnot have a value.
+5.Null:non-existent
+
+JS is  dynamic typing.Data types are automatically assigned to variables.
+In Js preferable to use camelcase notation i.e.firstName.
+
+RULES FOR VARIABLES:-
+1. variables cannot start from numbers it should start from_ or $ or a letter.
+2. variable name cannot be kywords or reserve words.
