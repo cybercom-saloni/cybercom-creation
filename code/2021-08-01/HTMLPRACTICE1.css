@@ -16,8 +16,10 @@
 			height: 215px;
 			width: 315px;
 			text-align: center;
+			background-color:gray;
 			
 		}
+
 		.text
 		{
 			padding-top: 70px;
