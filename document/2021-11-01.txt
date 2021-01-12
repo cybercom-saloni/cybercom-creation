@@ -1,0 +1,32 @@
+JAVA Script:-
+
+Primitive JavaScript DataTypes:-
+1.Number:floating point numbers.
+2.String:Sequences of characters.
+3.Boolean:logical data types that can only be true or false
+4.undefined:Data type of a vsriable that  does not havevslue.
+5.Null:non-existent
+
+JavaScrpit has dynamic typing:data types are automatically assigned to variables.
+
+variable can start from only alphabet,_,$.It can not start from digit.
+
+Variable Mutation and Type Coercion:-
+type coercion:- js automatically converts one type to another type 
+	 many variables can be declared in a line
+variable mutation:- to change the value of variable
+
+Basic Operator:-
+1.math operator
+a.substraction
+b.addition
+c.multiplication
+d.division
+
+2.logic operator
+a.greater than
+b.less than
+
+3.typeof operator-returns the type of variable
+
+operator precendence:--

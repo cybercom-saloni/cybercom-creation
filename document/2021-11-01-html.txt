@@ -1,0 +1,28 @@
+HTML
+<div>tag:-group of tags
+
+HTML Lists:-
+1.unordered list-not in order.<ul><li></li></ul>
+2.ordered list-specific order.<ol><li></li></ol>
+3.description list-decription of terms.<dl><dt><dd></dd></dt></dl>
+
+HTML Headings:
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+
+HTML paragraphs:
+<p></p>
+
+white space:-&nbsp;
+
+creating tables in HTML:
+<table><tr><td></td></tr></table>
+
+spanning multiple rows
+<table><tr><th colspan=""></th></tr><tr><td></td></tr>
+
+<table><tr><th></th></tr><th rowspan="2"></th><td></td></tr></table>

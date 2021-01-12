@@ -1,0 +1,71 @@
+		JAVASCRIPT-->>
+JS is hosted in some enivronment like browser such as google chrome,safari,firefox etc.
+JS hosted as JS Engine is a program  which takes the code and execute it.
+
+
+Steps in JS parser and Engine---->>>>
+Step 1. In JS engine code is parsed by a parser which reads the code by line by line and checks the syntax of code.
+Step 2. When everything is correct then parser produces a data structure called Abstract Syntax Tree.
+Step 3. Then this Abstract Syntax Tree is translated into machine code.i.e. a set of code of instruction that can be exected by computer processor.
+Step 4. then code is run.
+
+
+Execution Contexts and the Execution Stack------>>>>
+
+Execution Context:-All JS Code needs to run in an environment are called execution context.It is a box or container or a wrapper which stores variable in which a piece of code is evaluated and exceuted.
+
+Default Execution Context:- It is a global Execution context.this code is for the functions or code which are not inside any function.Execution Context is the object.So, the global Execution Context is assosiated with the global object.In the browser,that is the window object.
+eg. name===window.name;
+
+
+Execution Context :-
+Execution Context can be assositated in Execution Context Object.These object have 3 properties 
+1.variable object(VO):- contains function arguments inner variable declaration as well as function declaration.
+2.Scope chain :- contains current variable object as well as variable object of parents.
+3."This" vaiable :- like pointer object in java.
+
+When execution context object is called in a function it happens in 2 phases:-
+1.Creation Phase:-
+a.Creation of the Variable Object(VO).
+b.Creation of the scope chain.
+c.Determine value of 'this' variable.
+
+2.Execution Phase:-
+code of function that generates the current execution context is run line by line.
+
+
+1.Creation Phase:-
+
+a.Creation of the Variable Object(VO):-
+The argument object is created,containing all the arguments that were passed into the function.
+
+Code is scanned for function declarations :  for each function,a property is created in the variable object,pointing to the function.
+
+Code is scanned for variable declarations :  for each variables,a property is created in the variable object and set to undefined.
+
+
+functions and variables are combinedly called as Hoisting. which means they are available before the execution phase actually start.
+
+b.Creation of the scope chain.:-
+ it means it answer the question "where we can access a certain variable."
+
+Each new function creates a scope which is the space / environment,in which the variables it defines are accessible.
+
+Scope is also created by if block,for block,while block.
+ to create a new scope write a new function.
+
+In JS there is lexical scoping,where something is written in the code.
+
+
+c.Determine value of 'this' variable.
+Each and every execution gets.
+it is stored in the execution context.
+this keyword points at the global object(the window object,in the browser).
+this variable points to the object that is calling the method.
+
+when regular function is called the default object is the window object.
+
+method borrowing:-functions are treated as variables.
+
+	john.cal1=joe.cal1;
+	john.cal1();

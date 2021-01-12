@@ -1,0 +1,13 @@
+HTML:-
+
+styling HTML elements:-
+inline style:-using style attribute.
+embedded style:-using <style> in head section.
+external stylesheet:-using <link> element,poiniting to an external css file.
+
+external stle sheet attach in two ways:-
+1.linking:-through<link>tag
+2.exporting:-@import rule
+
+
+HTML noscript element- used to provide alernate option when the content is not available.

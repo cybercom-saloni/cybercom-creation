@@ -1,0 +1,47 @@
+body{
+            height: 500px;
+           
+            justify-content: center;
+            align-items: center;
+        }
+        .test1
+        {
+        	box-shadow: 1px 1px 12px 11px rgb(248,248,248);
+  				 width: 230px;
+  				  height: 320px;
+  				  background-color: #fff;
+  				  border-radius: 5px;
+  				  padding: 16px;
+  				 margin-left: 20px;
+  				 float: left;
+
+        }
+        img
+        {
+        	border-radius: 50%; width: 100px;margin-left: 60px;
+
+        }
+        .div1
+        {
+        	 text-align: center;
+        }
+        
+        .div2
+        {
+        	border-bottom: 1px solid lightgrey;
+
+        }
+        .div3
+        {
+            text-align: center;
+            font-weight: bold;
+            
+        }
+        .div4
+        {
+        	text-align: center;color: grey;
+        }
+        .main
+        {
+            margin-left: 250px;
+        }

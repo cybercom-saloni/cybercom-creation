@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+</head>
+<body>
+
+</body>
+<script>
+//Execution Stack:- order in which functions are called
+	var name='Joe';
+	function  first() {
+		var a='hello! it  is first block ';
+		second();
+		var	x=a + name;
+		window.alert(x);
+	}
+	function  second() {
+		var b='hii! it  is second block ';
+		third();
+		var	y=b + name;
+		window.alert(y);
+	}
+	function  third() {
+		var c='hey! it  is third block ';
+		var	z=c + name;
+		window.alert(z);
+	}
+
+	first();
+
+
+	// third is executed first then second then first
+
+	// can not take reference of other functions variable.
+</script>
+</html>

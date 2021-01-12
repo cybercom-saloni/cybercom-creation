@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+</head>
+<body>
+<h1>SCOPE CHAIN</h1>
+</body>
+<script>
+	 //lexical scoping (scope chain):-order in which functions are written lexically.
+	var a="hello";
+	first();
+	function first() {
+			var b="hi";
+			second();
+		function second()
+		{
+			var c="hey";
+			console.log(a+b+c);
+			window.alert(a+b+c);
+		}
+	}
+	// second function has scope of access the first function
+</script>
+</html>
