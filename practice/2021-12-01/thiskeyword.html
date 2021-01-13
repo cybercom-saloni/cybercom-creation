@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+</head>
+<body>
+
+</body>
+<script>
+	console.log(this);
+	function cal(year) {
+	window.alert(2021-year);
+	console.log(this);
+	}
+	cal(1995);
+
+	var joe={
+		name:'joe',
+		yearofbirth:1990,
+		cal1:function(){
+			console.log(this);
+			console.log(2021-this.yearofbirth);
+			window.alert(2021-this.yearofbirth);
+
+			function	inner(){
+				console.log(this);
+			}
+		}
+	}
+	joe.cal1();
+	// when regular function is called the default object is the window object.
+
+
+	// method borrowing
+	var john={
+		name:'joe',
+		yearofbirth:1998
+	}
+
+	// functions are treated as variables:-
+
+	john.cal1=joe.cal1;
+	john.cal1();
+</script>
+</html>

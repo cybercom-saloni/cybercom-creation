@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//object literal
+	var john={
+		firstName:'john',
+		lastName:'smith',
+		family:['joe','bob','emily','jane'],
+		job:'teacher',
+		isMarried:false,
+		calage:function(year) {
+			// function is method of john
+			return 2021-year;
+		}
+	};
+	console.log(john.calage(1998));
+	window.alert(john.calage(1998));
+
+
+	var john1={
+		firstName:'john',
+		lastName:'smith',
+		year:1998,
+		family:['joe','bob','emily','jane'],
+		job:'teacher',
+		isMarried:false,
+		calage:function() {
+			// function is method of john
+			return 2021-this.year;
+		}
+	};
+	console.log(john1.calage());
+	window.alert(john1.calage());
+
+	var john2={
+		firstName:'john',
+		lastName:'smith',
+		year:1998,
+		family:['joe','bob','emily','jane'],
+		job:'teacher',
+		isMarried:false,
+		calage:function() {
+			// function is method of john
+			this.age=2021-this.year;
+		}
+	};
+	john2.calage();
+	console.log(john2);
+</script>
+</html>

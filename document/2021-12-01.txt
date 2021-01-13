@@ -69,3 +69,4 @@ method borrowing:-functions are treated as variables.
 
 	john.cal1=joe.cal1;
 	john.cal1();
+

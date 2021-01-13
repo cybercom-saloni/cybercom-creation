@@ -1,0 +1,49 @@
+
+	JAVASCRIPT DAY 8
+
+DOM MANIPULATION:-
+JS interact with web page called DOM Manipulation.
+
+DOM-Document Object Model
+DOM is structured representation of an HTML document.
+It is used to connect webpages to scripts like javaScript. 
+
+For each HTML box,there is an object in the DOM that we can access and interact with.
+
+OVERVIEW OF HTML AND CSS:-
+Class can be used many times and id is unique.
+
+ the class name css is called as class selector.
+
+ body,table are called as type selector.
+
+ * is universal selector which simply selects all of the elements in the web page and applies the style to all of them.
+ 
+EVENTS:-
+Notifications that are sent to notify the code  that something happened on the webpage.Events are triggered by things like clicking a button,resizing a window,scrolling down or pressing a key.
+
+ Event Listener:
+ A function that performs an action based on a certain event.It waits for a specific event to happen.
+
+ Ananoyms function:
+ function does not have name.
+
+
+
+object:- 
+we define keyvalue pairs which means each value has name called key.
+object literal:->
+in array order matters a lot,in object order does not matter a lot.
+ 2 ways two object properties:-
+ 1.by accessing variable through dot.
+ 2.by accessing variable through bracket.
+
+ one change the value of variables by these two ways.
+
+OBJECT METHODS:-
+we can also attach functions to object that are called methods.
+
+
+LOOPS:-
+
+for loop-
