@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	// constructor method:-
+// newly create object inherits constructor from prototype property.
+var personProto={
+	calAge:function() {
+		console.log(2021-this.year);
+	}
+};
+
+
+// object.create method:-
+// we define the object act as a prototype and then create new object based on that prototype
+// inherits directly pass when we pass the object.
+var john=Object.create(personProto);
+john.name='john';
+john.year=1998;
+john.job='teacher';
+
+var jane=Object.create(personProto,
+{
+	name:{value:'jane'},
+	year:{value:1990},
+	job:{value: 'designer'}
+});
+</script>
+</html>

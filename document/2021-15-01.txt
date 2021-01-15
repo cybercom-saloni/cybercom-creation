@@ -46,3 +46,19 @@ john._proto_===Person.prototype
 instanceof:- it is like question becz it gives true or false.
 john instanceof Person
 
+
+object.create method:-
+we define the object act as a prototype and then create new object based on that prototype
+inherits directly pass when we pass the object.
+
+
+
+constructor method:-
+newly create object inherits constructor from prototype property.
+
+
+primtives:-
+variables containing primtive holds data inside of the variables itself.
+
+object:-
+object actually donot contains the object it contains refrence to the
