@@ -1,0 +1,26 @@
+<!-- display fibonacci series using basic javascript -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS CODING CHALLENGE - 6</title>
+	
+</head>
+<body>
+	<h1>Fibonacci Series</h1>
+<p id="print"></p>
+</body>
+<script type="text/javascript">
+const number = parseInt(prompt('Enter the number of terms for fibonacci series: '));
+let n1 = 0, n2 = 1, nextTerm;
+
+console.log('Fibonacci Series:');
+
+for (let i = 1; i <= number; i++) {
+    console.log(n1);
+    document.getElementById('print').innerHTML="<em> Total of Fibonacci series is : "+n1+" of " +i+" terms</em>";
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+}
+</script>
+</html>

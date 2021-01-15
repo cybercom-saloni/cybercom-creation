@@ -1,0 +1,48 @@
+------:JAVASCRIPT:-----
+OBJECTS  AND  FUNCTIONS:-
+
+Everything is an Object.
+
+JAVASCRIPT have two types object and primitive.
+Primitives are the data types. like numbers ,strings,booleans,undefined,Null.
+Object are other than data types lke array,functions,objects,dates,wrappers for numbers,wrappers for string,wrappers for Booleans.
+
+Object Oriented Programming:-
+Objects interacting with one another through methods and properties.
+
+Used to store data,structure applications into modules and keeping code clean.
+
+Constructor or prototype:-
+to create objects.we can create as many instances as we want.It is like blue print to create objects.
+
+Inheritance:-
+one object is based on other object.
+
+
+Every JS object has a prototype property,which makes inheritance possible in JS.
+
+The prototype property of an object is where we put methods and properties that we want other objects to inherit.
+
+The constructor's prototype property is NOT the prototype of the constructor itself,it's the prototype of ALL instances that are created through it.
+
+Prototype:-When a certain method(or property) is called,the search starts in the object itself,and if it cannot be found,the search moves on the object's prototype.this continues until the method is found.
+
+
+
+hasOwnProperty():- to check whether the object contains that property.
+john.hasOwnProperty('job');
+->true
+
+
+person.prototype:-
+to know the properties.
+
+
+prototype property of the person:-
+john._proto_===Person.prototype
+->true
+
+
+instanceof:- it is like question becz it gives true or false.
+john instanceof Person
+

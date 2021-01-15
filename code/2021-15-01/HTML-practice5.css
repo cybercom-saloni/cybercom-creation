@@ -1,0 +1,43 @@
+
+.table
+{
+	border:2px solid black;
+	margin-left:200px;
+	margin-right:200px;
+}
+
+td
+{
+	 text-align:left;
+	 font-size:20px;
+
+}
+th
+{
+	font-size:24px;
+	background-color:#98FB98;
+}
+.pink
+{
+	background-color: #ffb6c1;
+}
+.yellow
+{
+	background-color: 	#FFFF33;
+}
+.blue
+{
+	background-color:#ADD8E6;
+}
+pre
+{
+	font-size:20px;
+	text-align:left;
+	font-style:bold;
+}
+h4
+{
+	margin-left:200px;
+	font-size:24px;
+}
+

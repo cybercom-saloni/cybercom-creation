@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	// For loop
+var john=['john','smit',1990,'blue',false];
+for(var i=0;i<john.length;i++)
+{
+	console.log(john[i]);
+}
+
+// while loop
+var i=0;
+while(i<john.length)
+{
+	console.log(john[i]);
+	i++;
+}
+
+// continue:-quit current iteration of loop and continue to next loop
+var john1=['john','smit',1990,'blue',false];
+for(var j=0;j<john1.length;j++)
+{
+	if(typeof(john1[j])!=='string'){continue;}
+	console.log("continue--->");
+	console.log(john1[j]);
+}
+
+
+
+// break:-out from loop
+
+
+for(var j=0;j<john1.length;j++)
+{
+	console.log("break--->");
+	if(typeof(john1[j])!=='string'){break;}
+	console.log(john1[j]);
+}
+
+
+// looping backwards
+for(var i=john1.length-1;i>=0;i--)
+{
+		console.log(john1[i]); 
+}
+</script>
+</head>
+<body>
+
+</body>
+
+</html>

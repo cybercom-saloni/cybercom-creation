@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var Person=function(name,year,job) {
+		this.name=name;
+		this.year=year;
+		this.job=job;
+		
+	}
+
+	Person.prototype.calAge=function(){
+			console.log(2021-this.year);
+		};
+
+		var john=new Person('john',1998,'teacher');
+
+	Person.prototype.lastname='smith';
+
+	console.log(john.lastname);
+	john.calAge();
+
+	var joe=new Person('joe',1995,'designer');
+
+		joe.calAge();
+
+	var mark=new Person('mark',1993,'job');
+	mark.calAge();
+
+</script>
+</html>
