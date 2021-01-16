@@ -1,0 +1,19 @@
+**************HTML AND JS**************
+1)First class Function:-
+		 we can create One generic function and based on this create bunch of function.
+
+2) IIFE(Immmedately  invoked function expression) :-
+		For data privacy we can use this.
+
+3)closures:-	an inner function has alway access to the variable and parameter of its outer function 			even after the outer function returned.
+
+4)call,apply,bind:-
+		It's called method borrowing.
+		we use other method to call the object.
+
+
+5)Variable declare with let and const:-
+
+		In ES6 declaration of variable is must in  inside the function.
+6)Blocks:-
+		in the function or object when we declare variable as a const or let it must to be in same 				block.
