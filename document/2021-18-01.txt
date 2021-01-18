@@ -4,3 +4,26 @@ first argument then arrow operator then return statement value.
 For example :- 
 const years=[1990,1995,1997];
 var age5=years.map(element=>2021-element);
+
+
+Arrow function donot have this keyword.they simply use this keyword for the function name, can be called as lexical this variable.
+
+call,bind,apply allows us to define this variable manually.		and bind creates the copy of the function.
+call actually call immediately.
+
+
+
+****************Destructuring********************
+
+ convient way to extract data from a data structure like an object or any array.
+
+
+ built a data structure then destruct it.
+
+
+
+
+ ************Arrays************************
+
+ 
+
