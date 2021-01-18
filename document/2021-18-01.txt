@@ -25,5 +25,7 @@ call actually call immediately.
 
  ************Arrays************************
 
- 
+ findindex:-pass call back function into it return index of array
+
+
 

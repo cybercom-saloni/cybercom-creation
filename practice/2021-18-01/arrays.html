@@ -6,6 +6,16 @@
 		.green
 		{
 			background-color: green;
+			
+		}
+		.red
+		{
+			background-color: red;
+			
+		}
+		.box
+		{
+			
 			height: 100px;
 			width: 	300px;
 			text-align:center;
@@ -14,20 +24,85 @@
 	</style>
 </head>
 <body>
-<div class="green">
+<div class="box green">
 	Green class
+</div>
+<div class="box red">
+	Red class
 </div>
 </body>
 <script type="text/javascript">
-	function getdata()
-	 {
+	const boxes=document.querySelectorAll('.box');
 
-	}
-	var obj={
-		getdata:'mydata',
-		 getdata(){
-			this.getdata;
+
+	// ES5
+	var  boxArr5=Array.prototype.slice.call(boxes);
+	boxArr5.forEach(function (current) {
+		current.style.backgroundColor='red';
+	});
+
+
+	// ES6
+	const boxArr6=Array.from(boxes);
+	boxArr6.forEach(current => current.style.backgroundColor='red'); 
+
+
+	// to change text in the box break and continue statement can be run only in for loop
+
+		// ES5
+
+		for(var i=0;i<boxArr5.length;i++)
+		{
+			if(boxArr5[i].className==='red')
+			{
+				continue;
+			}
+			boxArr5[i].textContent='Red class';
 		}
-	}
+
+		// ES6 :- easy to combine loop called for-of loop
+		for(const current of boxArr6)
+		{
+			if(current.className==='box red')
+			{
+				continue;
+			}
+			current.textContent='Red class all';
+		}
+
+		for(const current of boxArr6)
+		{
+			if(current.className.includes('red')==='box red')
+			{
+				continue;
+			}
+			current.textContent='Red class all';
+		}
+
+// a group of childern one of them is full age find who and age of full aged person
+
+//ES5
+var ages=[12,17,8,21,14,11];
+var fullAge=ages.map(function(cur)
+{
+	return cur>=18;
+});
+console.log(fullAge);
+
+// position of person
+console.log(fullAge.indexOf(true));
+
+// age of full age person
+console.log(ages[fullAge.indexOf(true)]);
+
+
+
+// ES6:-findindex:-pass call back function into it return index of array.
+// position
+ console.log(ages.findIndex(current	=> current >= 18));
+
+
+ // value
+ console.log(ages.find(current	=> current >= 18));
 </script>
 </html>
