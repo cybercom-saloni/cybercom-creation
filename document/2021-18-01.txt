@@ -1,0 +1,6 @@
+*****************Arrow function*************
+
+first argument then arrow operator then return statement value.
+For example :- 
+const years=[1990,1995,1997];
+var age5=years.map(element=>2021-element);
