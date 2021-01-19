@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//classes
+	//ES5
+	var Person5=function(name,birth,job)
+	{
+		this.name=name;
+		this.birth=birth;
+		this.job=job;
+	}
+
+	Person5.prototype.calAge=function(){
+		var age=2021-this.birth;
+		console.log(age);
+	}
+	var john5=new Person5('john',1998,'designer');
+
+
+	//ES6
+	// name of class is simliar to name of function constructor
+	class Person6{
+		constructor(name,birth,job)
+		{
+			this.name=name;
+			this.birth=birth;
+			this.job=job;
+		}
+		// to add method
+		calAge()
+		{
+			var age=new Date().getyear-this.birth;
+		console.log(age);
+		}
+	}
+	// instance of the class
+	const john6=new Person6('john',1998,'designer');
+</script>
+</html>

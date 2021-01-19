@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//ES5
+
+	// super class
+	var Person5=function(name,birth,job)
+	{
+		this.name=name;
+		this.birth=birth;
+		this.job=job;
+	}
+
+
+	Person5.prototype.calAge=function(){
+		var age=2021-this.birth;
+		console.log(age);
+	}
+
+	// subclass-athelete
+
+	var Athelete5=function(name,birth,job,games,medals)
+	{
+		// call super class
+		Person5.call(this,name,birth,job);
+		 this.games=games;
+		 this.medals=medals;
+		 // this keyword points to new empty object
+
+	}
+
+	// create prototype chain
+	// object.create method allows us to set prototype manually.
+
+	Athelete5.prototype=Object.create(Person5.prototype);
+
+	Athelete5.prototype.wonMedal=function(){
+		this.medals++;
+		console.log(this.medals);
+	}
+	var johnathelete5=new Athelete5('John',1998,'swimmer',3,10);
+	johnathelete5.calAge();
+	johnathelete5.wonMedal();
+
+
+
+
+
+	// ES6
+	class Person6{
+		constructor(name,birth,job)
+		{
+			this.name=name;
+			this.birth=birth;
+			this.job=job;
+		}
+		// to add method
+		calAge()
+		{
+			var age=2021-this.birth;
+		console.log(age);
+		}
+	}
+
+	class Athelete6 extends Person6{
+		constructor(name,birth,job,games,medals)
+		{
+			super(name,birth,job);
+			this.games=games;
+			this.medals=medals;
+		}
+		wonMedal(){
+			this.medals++;
+			console.log(this.medals);
+		}
+	}
+	const johnathelete6=new Athelete6('John',1998,'swimmer',3,10);
+	johnathelete6.calAge();
+	johnathelete6.wonMedal();
+</script>
+</html>

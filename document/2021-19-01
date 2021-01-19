@@ -1,0 +1,21 @@
+**********JAVASCRIPT***********
+
+********Classes**********
+Classes:-
+
+classes makes easier to implement inheritance to create objects on blue prints.
+In ES5 these blue prints are called as function consrtuctor.
+
+static method:-
+
+they are simply attach to class but not inherited by the class instances. 
+
+
+class defination are not hosited unlike function constructor we have to first implement class and on late code we can use it.
+
+We can only add methods to classes but not properties.
+
+
+********Classes with Subclasses**********
+
+object.create method allows us to set prototype manually.

@@ -1,0 +1,32 @@
+.wrapper
+{
+
+}
+.container {
+  border:1px solid gray;
+  background-color: #f2f2f2;
+}
+body
+{
+	margin-left:440px;
+	margin-right:440px;
+}
+.zip1
+{
+	 background-color: #f2f2f2;
+}
+.submit
+{
+	background-color:green;
+	font-size: 24px;
+	margin-left:140px;
+}
+.reset
+{
+	background-color:red;
+	font-size: 24px;
+}
+span
+{
+	font-size:12px;
+}

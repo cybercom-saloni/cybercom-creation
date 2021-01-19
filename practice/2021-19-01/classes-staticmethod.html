@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//static method
+	// they are simply attach to class but not inherited by the class instances.
+	
+		class Person6{
+		constructor(name,birth,job)
+		{
+			this.name=name;
+			this.birth=birth;
+			this.job=job;
+		}
+		// to add method
+		calAge()
+		{
+			var age=2021-this.birth;
+		console.log(age);
+		}
+		static greeting()
+		{
+			console.log("hey!!!!");
+		}
+		// static method cannot be used on john becz its instances are not created.
+		// can be used like a helper function
+	}
+	// instance of the class
+	const john6=new Person6('john',1998,'designer');
+	Person6.greeting();
+</script>
+</html>
