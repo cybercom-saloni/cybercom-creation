@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+	var array=localStorage.getItem('array');
+	var items=JSON.parse(array);
+	array=items;
+	document.write('<table border = "1" id = "table1"><tr><th>Name</th> <th>Email</th> <th>Date Of Birth</th> </tr> <tr>');
+	if(array==null)
+	{
+		alert("record not found!");
+		document.getElementById('table1').style.display='none';
+		window.location.href="practice4.html";
+	}
+	else
+	{
+		for(var i=0;i<array.length;i++)
+		{
+			document.write('<td>'+array[i].name+'</td><td>'+array[i].email+'</td>'+array[i].dob+'</td></tr>');
+		}
+	}
+	document.write('</table>');
+</script>
+</html>

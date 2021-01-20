@@ -1,0 +1,46 @@
+primtives:-
+variables containing primtive holds data inside of the variables itself.
+numbers,strings,booleans,undefined and null are primitive.
+
+object actually donot contains the object it contains refrence to the place in memory where object is stored.
+
+variables donot have copy of the object.It points to the object.
+
+returning function :-
+anonyums function it does not have name.
+
+Immediately Invoked Function Expression(IIFE):-
+For data privacy we can use this.
+
+Closures:-
+An inner function has access to the variables and parameters of its outer function,even after the outer function has returned.
+
+clousers are not created manually they are created built-in in javascript.
+
+
+Bind,Call And Apply:-
+This function allows to call function and sets this variable manually. 
+
+first argument of call method is always set this variable.
+
+call method can be borrowed called as call method borrowing.
+
+
+Apply method:-
+it accepts argument as array.
+
+
+Bind Method:-
+similar to call method it also allows us to set this variable explicity.
+Bind does not immediately call the function it generates a copy of the function.
+bind allows us to preset the values.
+
+
+ES6:
+variables can be declare by const and let.
+
+const:-values are not changed
+let:- values can be changed as var
+ES6 declaration are blocked scope while ES5 declaration are function scope.
+
+block:-code wrap betwen curely braces.

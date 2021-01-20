@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>BIND,CALL AND APPLY</h1>
+</body>
+<script type="text/javascript">
+	var john={
+		name:'john',
+		age:26,
+		job:'teacher',
+		presentation:function(style,timeofDay) {
+			if(style==='formal')
+			{	
+				console.log('good'+timeofDay+',All I\'m'+this.name+' I\'m '+this.age+' years old.	');
+			}
+			else if(style==='friendly')
+			{
+				console.log('good'+timeofDay+',Friends. I\'m'+this.name+' I\'m '+this.age+' years old.	');
+			}
+		}
+	};
+	var emily=
+	{
+		name:'emily',
+		age:35,
+		job:'designer'
+	};
+	// first argument of call method is always set this variable.
+
+	john.presentation('formal','morning');
+	john.presentation.call(emily,'friendly','evening');
+	// this is called as call method borrowing.
+
+
+	// apply method:- it accepts argument as array.
+
+	john.presentation.apply(emily,['friendly','evening']);
+
+
+	// bind method
+	var johnFriendly=john.presentation.bind(john,'friendly');
+
+	johnFriendly('afternoon');
+	//bind allows us to preset the values.
+
+var emilyformal=john.presentation.bind(emily);
+emilyformal('formal','afternoon');
+
+
+
+var years=[1990,1995,1998,2000,2009];
+	function arrayCalc(arr,fn) {
+		var arrRes=[];
+		for(var i=0;i<arr.length;i++)
+		{
+			arrRes.push(fn(arr[i]));
+		}
+		return arrRes;
+	}
+
+	function calAge(element)
+	{
+		return 2021-element;
+	}
+
+	function isFullAge(limit,element)
+	{
+		return element>=limit;
+	}
+
+	var ages=arrayCalc(years,calAge);
+	var fullJapan=arrayCalc(ages,isFullAge.bind(this,22));
+console.log(ages);
+	console.log(fullJapan);	
+</script>
+</html>

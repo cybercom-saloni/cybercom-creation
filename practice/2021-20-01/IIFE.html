@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h3>build a game where win score is random between 0 to 9 or loose when it is smaller.Score should not be visible</h3>
+</body>
+<script type="text/javascript">
+	// write a simple function becz variables defined inside the function cannot access outside of the function becz of scoping chain.
+	function game()
+	{
+		var score=Math.random()*10;
+		console.log(score>=5);
+	}
+	game();
+
+	// few problems in this logic becz we have to hide the score we donot have to declare function we can use IIFE.
+
+//IIFE function suntax:
+	(function(){
+		var score=Math.random()*10;
+		console.log(score>=5);
+	})();
+
+// console.log(score);
+// score is not accessible outside the function.
+
+
+// we can also pass arugments in IIFE
+(function(goodluck){
+		var score=Math.random()*10;
+		console.log(score>=5-goodluck);
+	})(5);
+</script>
+</html>

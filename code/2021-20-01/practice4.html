@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>PRACTICE</h1>
+<h3>Create one html form that contain the below fields,
+<br>
+o Name, Email, Date of birth.
+<br>
+o On click of submit button, Store the data as object in one single array. (array will be same for all records)
+<br>
+o Display the data in one table format another page that is, view.html</h3>
+
+<form action="view.html" method="get">  
+	<table>
+		<tr>
+			<td><label> NAME: </label></td>
+			<td><input type="text" name="name" id="name"></td>
+		</tr>
+		<tr>
+			<td><label> Email: </label></td>
+			<td><input type="email" name="email" id="email"></td>
+		</tr>
+		<tr>
+			<td><label> Date Of Birth: </label></td>
+			<td><input type="date" name="dob" id="dob"></td>
+		</tr>
+	</table>
+	<input type="button" class="btn" name="submit" value = "Add" onclick="addElement();"/>
+	 <input type="submit" class="btn" name="display" value = "view all records">
+	 <div id="Result"></div> 
+</form>
+</body>
+<script type="text/javascript">
+	var array=[];
+	function addElement() {
+		alert('call');
+		var addname=document.getElementById('name').value;
+		var addemail=document.getElementById('email').value;
+		var adddob=document.getElementById('dob').value;
+		console.log(addname+adddob+addemail);
+
+		var person={
+			name:addname,
+			email:addemail,
+			dob:adddob
+		};
+		if(localStorage.getItem('array'))
+		{
+			array=JSON.parse(localStorage.getItem('array'));
+		}
+		array.push(person);
+		console.log(array);
+
+		localStorage.setItem('array',JSON.stringify(array));
+		alert(addname + " " + addemail + " " + adddob + " added at index " + array.length);
+	}
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//ES5
+	var name5='joe';
+	name5='john';
+	console.log(name5);
+
+// ES6
+const name6='joe';
+// name6='john';
+	console.log(name6);
+// 	const:-values are not changed
+// let:- values can be changed as var
+let name66='joe';
+name66='john';
+	console.log(name66 );
+// ES6 declaration are blocked scope while ES5 declaration are function scope.
+
+//ES5
+function driver(passtest)
+{
+	if(passtest)
+	{
+		var firstname='JOE';
+		var birth=1998;
+		console.log(firstname+' born in '+birth);
+	}
+}
+driver(true);
+// driver(false);
+
+// ES6
+function driver6(passtest)
+{
+	if(passtest)
+	{
+		let firstname='JOE';
+		const birth=1998;
+		console.log(firstname+' born in '+birth);
+	}
+}
+driver6(true);
+</script>
+</html>

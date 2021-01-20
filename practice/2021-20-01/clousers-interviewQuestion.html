@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h3>function create interview for different jobs.
+	function returning another function</h3>
+</body>
+<script type="text/javascript">
+	function interviewQuestion(job)
+	{
+		return function(name)
+		{
+			if(job==='desginer')
+			{
+				console.log(name+','+'what ux design is?');
+			}
+			else if(job==='teacher')
+			{
+				console.log(name+' what subject do u teach?');
+			}
+			else
+			{
+				console.log('hello '+name+' what do u do?');
+			}
+		}
+	}
+
+	interviewQuestion('teacher')('Mark');
+	interviewQuestion('desginer')('joe');
+</script>
+</html>

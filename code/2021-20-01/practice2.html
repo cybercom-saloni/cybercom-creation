@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>PRACTICE</h1>
+<h3>Add multiple objects in array and store it in local storage.
+<br>
+o Object contains the below properties,
+<br>
+o Name, Age, Email, Telephone Number.
+<br>
+o Display the multiple objects in table structure.</h3>
+<div id="show"></div>
+</body>
+<script type="text/javascript">
+	var obj = function(name,age,email,telephoneNumber){
+    this.name = name;
+    this.age = age;
+    this.email = email;
+    this.telephoneNumber = telephoneNumber;
+}
+
+var saloni = new obj('saloni',20,'saloni@gmail.com',8849364239);
+var siya = new obj('siya',21,'siya@gmail.com',8849364239);
+var jem = new obj('jem',22,'jem@gmail.com',8849364239);
+var joe = new obj('joe',21,'joe@gmail.com',8849364239);
+
+console.log(saloni);
+
+
+// store object in localstorage
+localStorage.setItem('saloni', JSON.stringify(saloni));
+
+var array=[saloni,siya,jem,joe];
+
+// store array in local storage
+localStorage.setItem("array", JSON.stringify(array));
+
+
+document.write("<table border=1><thead><tr><td><b>Name</td><td><b>Age</td><td><b>E-mail</td><td><b>Phone Number</td></tr></thead><tbody>");
+
+for(let i = 0; i < array.length; i++) {
+
+        document.write(`<tr><td><b>${array[i].name}</td><td><b>${array[i].age}</td><td><b>${array[i].email}</td><td><b>${array[i].telephoneNumber}</td></tr><br>`);
+    }
+
+
+document.write("</tbody></table>");
+</script>
+</html>

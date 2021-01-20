@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var years=[1990,1995,1998,2000,2009];
+	function arrayCalc(arr,fn) {
+		var arrRes=[];
+		for(var i=0;i<arr.length;i++)
+		{
+			arrRes.push(fn(arr[i]));
+		}
+		return arrRes;
+	}
+
+	function calAge(element)
+	{
+		return 2021-element;
+	}
+
+	function isFullAge(element)
+	{
+		return element>=18;
+	}
+
+	function maxHeartRate(element)
+	{
+		if(element>=18 && element<=81)
+		{
+		return Math.round(206.9-(0.98*element));
+		}
+		else
+		{
+			return -1;
+		}
+
+	}
+
+	var ages=arrayCalc(years,calAge);
+	console.log(ages);
+	var fullages=arrayCalc(ages,isFullAge);
+	console.log(fullages);
+
+	var rates=arrayCalc(ages,maxHeartRate);
+	console.log(rates);
+</script>
+</html>

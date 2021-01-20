@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//primitives
+	var a=23;
+	var b=a;
+	a=46;
+	// each variables store own copy of the data.they do not reference anything.
+	console.log(a);
+	console.log(b);
+
+	var obj1={
+		name:'John',
+		age:26
+	};
+
+
+	//object
+
+	var obj2=obj1;
+	obj1.age=28;
+	console.log(obj1.age);
+	console.log(obj2.age);
+	// same value becz we didnot create new object.new reference was created on object.
+
+	//functions
+	var age=28;
+	var obj={
+		name:'joe',
+		city:'banswara'
+	};
+
+	//mute the data
+	function change(a,b)
+	{
+		a=30;
+		b.city='ahmedabad';
+	}
+
+	change(age,obj);
+	console.log(age);
+	console.log(obj.city);
+
+	//in function when we pass primitive a copy is created.
+</script>
+</html>

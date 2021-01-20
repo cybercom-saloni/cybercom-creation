@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h3>function returns a function which calculate how many years are left for the retirement?</h3>
+</body>
+<script type="text/javascript">
+	function retirement(reage)
+	{
+		var a='years left until retirement.';
+		return function(birthyear)
+		{
+			var age=2021-birthyear;
+			console.log(reage-age+a);
+		}
+	}
+
+	var retirementUS=retirement(66);
+	retirementUS(1998);
+
+	retirement(66)(1995);
+	retirement(55)(1991);
+</script>
+</html>

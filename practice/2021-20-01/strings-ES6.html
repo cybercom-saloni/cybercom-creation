@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	let firstName='John';
+	const year=1998;
+	function calAge(year) {
+		return 2021-year;
+	}
+	//ES5
+	console.log('this is'+firstName+' he was born in'+year +' age is'+calAge(year));
+
+	//ES6
+	// template literals:-``
+
+	console.log(`this is ${firstName}. he was born in ${year} age is ${calAge(year)} `);
+
+
+
+	//string methods
+	//create new string
+	const n=`${firstName}`;
+	// start with method
+	console.log(n.startsWith('J'));
+	console.log(n.startsWith('j'));
+
+	// ends with method
+	console.log(n.endsWith('hn'));
+	console.log(n.startsWith('h'));
+
+	// for middle of string we use includes
+	console.log(n.includes('o'));
+	console.log(n.includes('t'));
+
+
+	// repeat
+	console.log(firstName.repeat(4));
+	console.log(`   ${firstName}`.repeat(5));
+</script>
+</html>

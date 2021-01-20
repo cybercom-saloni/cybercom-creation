@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h3>function create interview for different jobs.
+	//function returning another function</h3>
+</body>
+<script type="text/javascript">
+	//
+
+	function interviewQuestion(job)
+	{
+		if(job==='designer')
+		{
+			//anonyums function it does not have name
+			return function(name)
+			{
+				console.log(name+','+'what ux design is?');
+			}
+
+		}
+		else if (job==='teacher')
+		{
+			return function(name)
+			{
+				console.log(name+' what subject do u teach?');
+			}
+		}
+		else
+		{
+			return function(name)
+			{
+				console.log('hello '+name+' what do u do?');
+			}
+		}
+	}
+var teacherQuestion=interviewQuestion('teacher');
+teacherQuestion('John');
+
+var designerQuestion=interviewQuestion('designer');
+designerQuestion('John');
+designerQuestion('Mark');
+
+
+// another way
+interviewQuestion('teacher')('Mark');
+</script>
+</html>
