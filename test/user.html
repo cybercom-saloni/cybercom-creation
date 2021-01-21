@@ -11,7 +11,10 @@
 <div class="main-container">
 	<div class="container-part1">
 		<div class="align">
-			<h2>Hello,<div id="user">	</div></h2>
+			<h2><label id="name">Hello,</h2>
+				<script type="text/javascript">
+					document.getElementById("name").innerHTML = "Hello "+sessionStorage.getItem("username");
+				</script>
 		</div>
 		<div class="align">
 			<a href="dashboard.html">Dashboard</a>

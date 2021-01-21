@@ -24,10 +24,11 @@ function ValidUser() {
 
     if(valid == false)
     {
+        window.location.href = "dashboard.html";
         valid = false;
         alert("Invalid email and password!")
     }
     else{
-        window.location.href = "login.html";
+        window.location.href = "dashboard.html";
     }
 };

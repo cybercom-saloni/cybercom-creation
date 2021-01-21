@@ -3,12 +3,16 @@
 <head>
 	<title>WEB APP-CYBERCOM CREATION</title>
 	<link rel="stylesheet" type="text/css" href="css/user.css">
+	<script type="text/javascript" src="js/user-session-logs.js"></script>
 </head>
 <body>
 <div class="main-container">
 	<div class="container-part1">
 		<div class="align">
-			<h2>Hello</h2>
+			<h2><label id="name">Hello,</h2>
+				<script type="text/javascript">
+					document.getElementById("name").innerHTML = "Hello "+sessionStorage.getItem("username");
+				</script>
 		</div>
 		<div class="align">
 			<a href="dashboard.html">Dashboard</a>
@@ -26,10 +30,9 @@
 	</div>
 	<div class="container-part2">
 		<h1>User&nbsp;Session&nbsp;Logs</h1>
-		
-		<div id="row2">
-			
-		</div>
+   		<div id="table">
+
+              </div>
 	</div>
 </div>
 </body>

@@ -8,8 +8,13 @@
 <div class="main-container">
 	<div class="container-part1">
 		<div class="align">
-			<h2>Hello</h2>
-		</div>
+<h2><label id="name">Hello,</h2>
+				<script type="text/javascript">
+					document.getElementById("name").innerHTML = "Hello "+sessionStorage.getItem("username");
+				</script>
+			</label>
+		</h2>
+	</div>
 		<div class="align">
 			<a href="sub-user.html">Dashboard</a>
 		</div>
