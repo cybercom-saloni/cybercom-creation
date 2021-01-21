@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>PRACTICE</h1>
+<h3>A program to sort an array of objects.</h3>
+</body>
+<script type="text/javascript">
+	function sortcomp(a,b)
+	{
+		const a1=a.name.toLowerCase();
+		const b1=b.name.toLowerCase();
+		let sorting=0;
+		if(a1>b1)
+		{
+			sorting=1;
+		}
+		else
+		{
+			sorting=-1;
+		}
+		return sorting;
+	}
+	const std=[{name:'saloni',age:22},{name:'bhavya',age:10},{name:'ali',age:40},{name:'siya',age:30}];
+	console.log(std.sort(sortcomp));
+
+
+	// sorting by age
+	function agecomp(a,b)
+	{
+		return a.age-b.age;
+	}
+	console.log(std.sort(agecomp));
+</script>
+</html>
