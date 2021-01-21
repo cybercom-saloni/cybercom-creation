@@ -87,3 +87,12 @@ input[type="email"] {
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 2px;
 }
+a{
+    text-decoration:   none;    
+    color: black;
+    height:50px;
+    width: 200px;
+    border:1px solid    black;
+    align-items:   center;
+    display:  flex; 
+}

@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>WEB APP-CYBERCOM CREATION</title>
-	<link rel="stylesheet" type="text/css" href="registration.css">
-	<script src="registration.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/registration.css">
+	<script src="js/registration.js"></script>
 </head>
 <body>
 <div class="main-container">
@@ -16,10 +16,10 @@
 			<input type="email" name="email" id="email" placeholder="Email">
 			</div>
 			<div class="align">
-			<input type="password" name="password" id="password" placeholder="Password" style="-webkit-text-security: square;">
+			<input type="text" name="password" id="password" placeholder="Password" style="-webkit-text-security: square;">
 			</div>
 			<div class="align">
-			<input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" style="-webkit-text-security: square;">
+			<input type="text" name="confirm-password" id="confirm-password" placeholder="Confirm Password" style="-webkit-text-security: square;">
 			</div>
 			 <div class="align">
                 <div class = "select">
@@ -44,9 +44,9 @@
       		   </div>
    			 </div>
    			  <div class="align">
-   			  	<input type="checkbox" name="terms">Terms and Condition
+   			  	<input type="checkbox" name="terms" id="terms" onchange="document.getElementById('submit').disabled = !this.checked;">Terms and Condition
    			  </div>
-			<input type="submit" name="REGISTER" class="btn" value="REGISTER" onclick="register();">
+			<input type="submit" id ="submit" name="REGISTER" class="btn" value="REGISTER" onclick="register();">
 			 
 		</form>
 </div>

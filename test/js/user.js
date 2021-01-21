@@ -10,7 +10,7 @@ function addUser()
 		name : addusername,
 		email : adduseremail,
 		birthdate : adduserbdate,
-		password:adduserpassword
+		password: adduserpassword
 	};
 	
 		alert(year+index);
