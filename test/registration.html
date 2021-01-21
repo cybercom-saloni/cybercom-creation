@@ -3,11 +3,12 @@
 <head>
 	<title>WEB APP-CYBERCOM CREATION</title>
 	<link rel="stylesheet" type="text/css" href="registration.css">
+	<script src="registration.js"></script>
 </head>
 <body>
 <div class="main-container">
 	<h1>REGISTRATION</h1>
-		<form action="dashboard.html" class="form1">
+		<form  action="login.html" class="form1">
 			<div class="align">
 			<input type="text" name="name" id="name" placeholder="Name">
 			</div>
@@ -22,7 +23,7 @@
 			</div>
 			 <div class="align">
                 <div class = "select">
-	                <select  name="city">
+	                <select  name="city"  id="city">
 		                <option value="SelectCity" selected>Select City</option>
 		                <option value="Baroda">Baroda</option>
 		                <option value="Ahmedabad">Ahmedabad</option>
@@ -33,7 +34,7 @@
    			 </div>
    			 <div class="align">
                 <div class = "select">
-	                <select  name="state">
+	                <select  name="state" id="state">
 		                <option value="SelectState" selected>Select State</option>
 		                <option value="Gujarat">Gujarat</option>
 		                <option value="Rajasthan">Rajasthan</option>
@@ -45,7 +46,8 @@
    			  <div class="align">
    			  	<input type="checkbox" name="terms">Terms and Condition
    			  </div>
-			<input type="submit" name="REGISTER" class="btn" value="REGISTER">
+			<input type="button" name="REGISTER" class="btn" value="REGISTER" onclick="register();">
+			 
 		</form>
 </div>
 </body>

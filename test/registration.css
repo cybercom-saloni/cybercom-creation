@@ -65,6 +65,30 @@ input[type="text"] {
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 2px;
 }
+input[type="email"] {
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    color: red;
+    font-size: 20px;
+	font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 2px;
+}
+input[type="text"] {
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    color: red;
+    font-size: 20px;
+	font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 2px;
+}
 .select
 {
     margin-left: 10px;    
@@ -87,6 +111,18 @@ select
 }
 
 input[type="checkbox"] {
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    color: red;
+    font-size: 20px;
+	font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 2px;
+}
+input[type="email"] {
     font-style: normal;
     font-weight: normal;
     speak: none;
