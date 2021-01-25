@@ -1,8 +1,7 @@
 <?php
 if(1){
 	echo 'true';
-}
-else{
+}else{
 	echo 'false';
 }
 ?>

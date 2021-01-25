@@ -1,9 +1,8 @@
 <?php
 $var='text';
-if('tex'==$var){
+if('tex'== $var){
 	echo 'true';
-}
-else{
+}else{
 	echo 'false';
 }
 ?>

@@ -1,12 +1,10 @@
 <?php
-$var=11;
-if($var==10){
+$var=10;
+if($var == 10){
 	echo 'ten';
-}
-else if($var==11){
+}elseif($var == 11){
 	echo 'eleven';
-}
-else{
+}else{
 	echo 'not';
 }
 ?>

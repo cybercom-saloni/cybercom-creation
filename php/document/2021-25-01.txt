@@ -1,0 +1,82 @@
+assignment operator:-to assign the values.(=)
+
+comparison operator:-
+to compare the values.(==)
+equal:- ==
+not equal:- <> or !=
+greater than:- >
+less than:- <
+greater than or equal to :- >=
+less than or equal to :- <=
+
+arithmetic operator:-
++:- addition
+-:-substraction
+/:-division
+*:-multiplication
+%:-modulus
+++:-increment operator
+--:-decrement operator
+
+
+logical operator:-
+&&:- and
+||:- or
+!:-not
+
+triple equal:- === strict equality operator
+
+loops:-
+1.while loop:-condition is evaluated at start
+2.do-while loop:-condition is evaluated at end
+3.foor loop:-
+4.switch
+
+die():- 
+from that point to rest of page to kill the rest of page.
+we can pass message there.
+exit():-
+same as die.we can pass message there.
+
+using @ before command it can be made as user-friendly.
+
+preg_match():-
+it do expression matching pattern inside the string.it return 1 or 0.
+first parameter is the to be matched parameter and second parameter is the string.
+
+function:-
+it is something to allow particular block of code to be reused.
+
+
+function arguments:-
+
+
+String function:-
+str_word_count:-to count the word in the string.
+str_word_count($string,0)
+it returns array:-str_word_count($string,1)
+print_r to print that array.
+
+assosiative array which gives us position:-str_word_count($string,2)
+
+include specific character:-str_word_count($string,1,'.');
+
+
+string shuffle:-
+shuffle to no of characters.
+
+
+reverse:-to reverse the string.
+
+compare two string for similarity.:-
+similar_text(string1,string2,result)
+
+
+strlen:-to find the length
+
+trim:-trim the whitspace 
+
+htmlentities:-to assign the slashes.
+addslashes also used here.
+
+stripslashes:-for different secuirty purpose.
