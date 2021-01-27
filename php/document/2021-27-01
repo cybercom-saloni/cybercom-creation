@@ -1,0 +1,15 @@
+********************Array********************
+Array:-an array is a way to store data inside one variable.
+	   or a collection of data.
+
+Associative array:-
+it stores the data in same way it allows us to change the key from how many keys we have to name of our choice.
+
+multidimensional array:-
+array inside an array.
+
+for each:-
+it allows us to iterate an array.
+
+include:-
+include can be used to define header footer or to store variables in  page or anything else.
