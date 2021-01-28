@@ -1,0 +1,42 @@
+require:
+to kill the page when the page is not found.
+it handles the error differently
+
+include:- used for design basis.
+
+require_once and include_once:-
+it will check the file is previously required or not 
+
+
+pattern matching-
+preg_match() function is used for pattern matching
+
+strtolower():- for lower case
+
+strtoupper():-for upper case
+
+ireplace function:-case insitive.
+
+
+string position:-
+strpos($string,$find,$offset)
+1st argument:-string what we want to search in.
+2nd argument:-keyvar or character to find string
+3rd argument:- offset,where to start(optional)
+
+substring replace:-
+substr_replace($string,$replace,$start,$end)
+1st argument:-string what we want to look out.
+2nd argument:-string we want replace
+3rd argument:-from where we have to start
+4th argument:-where we want to end.or length of character.
+
+
+string replace:-
+str_replace takes 3 arguments.
+str_replace($replaceoldword,$replacenewword,$string)
+
+
+1st arguments:-which word is to be replaced.
+2nd arguments:-replace word specific with.
+3rd arguments:-string we want to look out.
