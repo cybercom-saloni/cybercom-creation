@@ -50,3 +50,12 @@ read directory :-put into the loop and creates another variable in file.
 file_exists():-checks file already exists.
 
 to delete a file we use function unlink('filename').
+for renaming file:-rename()can be used.
+
+
+file-upload:-
+form has enctype="multipart/form-data":- for the form accepting the data.
+tmp_name:-to store the temporary name.
+error:-returns the error.
+
+move_uploaded_file('tmplocation','location'.'filename'):-to move the file
