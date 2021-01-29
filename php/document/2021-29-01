@@ -1,0 +1,52 @@
+timestamp:-
+in order to keep tracking of current time day.it is a integer value or numerical value.
+time():-returns current unix timestamp.
+
+date():-works with time first argument is the key and 2nd argument is the timestamp. 
+
+to store dates in database it is recommended to store in timestamp.
+
+strtotime():-takes string data in the time.
+
+random number:-
+rand() 
+getrandmax():-for maximum random number.
+
+
+htmlentities:-display the command rather than process
+
+sessions():-
+store the information about users.
+sessions are stored on the server.
+sessions are more secure.
+to set session we use $_SESSION['varname']
+to unset session:-unset($_SESSION['varname'])
+unset all the sessions:-session_destroy();
+session are destroyed when browser is closed.
+
+cookies:-
+cookie is a file that store specific information.
+cookies can be stored for a year or a week.
+to set a cookie we use setcookie('nameofCookie','value','ExpressionDay(current time+time in seconds)') function.
+unset a cookie:- by reset the cookie.
+
+
+file handling:-
+w:-write to a file(overwrite the text)
+r:-read from a file	
+a:-append to a file(added to the list)
+
+fopen('filename','mode'):-to open file or create file.
+fwrite('fileopendetails','content'):-write data in the file 
+fclose('filename'):-to close the file
+
+explode:-means seperator is in file
+implode:-means to add seperator in file
+
+
+open directory :-opendir() open the directory and loaded to handle.
+read directory :-put into the loop and creates another variable in file.
+
+file_exists():-checks file already exists.
+
+to delete a file we use function unlink('filename').
