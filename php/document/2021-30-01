@@ -1,0 +1,8 @@
+MD5:-
+it is a form of encryption and a hash is generated from a given string.
+md5('string')
+it doesnot return origin value.
+
+
+XML:-(Xenstible Markup Language)
+simplexml_load_file():-allows open a xml file and easily access the xml file.
