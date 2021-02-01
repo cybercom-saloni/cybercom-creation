@@ -1,0 +1,28 @@
+fieldset{      
+	background-color: #33FF66;
+	width: 90%;
+	border: 2px solid black;
+	align-items:center;
+	margin-top:10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+legend{
+	letter-spacing:2px;
+}
+label{
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+.box{
+	width:600px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:30px;
+	margin-bottom:20px;
+	background-color:#CCFF66;
+}

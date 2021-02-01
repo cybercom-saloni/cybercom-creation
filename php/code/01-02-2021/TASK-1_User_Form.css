@@ -1,0 +1,65 @@
+.backcolor-blue{
+	background-color: #3366FF;
+}
+.input{
+	background-color: #CCFF66 ;
+	margin:0px 30px;
+	width:80%;
+	overflow: hidden;
+}
+.input1{
+	background-color: #CCFF66 ;
+	margin:0px 140px;
+	/*text-align: center;*/
+	width:50%;
+	overflow: hidden;
+	/*display:flex;
+	justify-content: center;
+	align-items: center;*/	
+}
+.input2{
+	background-color: #CCFF66 ;
+	width:30%;
+	margin-left:-100px;
+}
+.input21{
+margin:0px 100px;
+background-color: #CCFF66 ;
+width:30%;
+}
+select{
+	background-color: #CCFF66 ;
+	margin:0px 30px;
+	width:80%;
+}
+textarea{
+	background-color: #CCFF66 ;
+	margin:0px 30px;
+	width:80%;
+}
+.backcolor-yellow{
+	background-color: #FFFF33;
+}
+.text-red{
+	color:#FF0000;
+	font-weight:bold;
+	text-align:center;
+}
+.wrapper{
+	display:flex;
+	align-items:center;
+}
+table.center {
+  margin-left: 400px; 
+  margin-top:40px;
+}
+form{
+	font-size: 20px;
+}
+.red{
+	color:red;
+	font-size:16px;
+}
+input,select,textarea{
+	font-size:20px;
+}
