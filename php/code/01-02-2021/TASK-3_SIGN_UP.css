@@ -1,0 +1,79 @@
+.box{
+	height:463px;
+	width:500px;
+	border:1px solid black;
+	/*text-align: center;*/
+	 margin-left: 400px; 
+
+}
+.header{
+	font-size:30px;
+	margin-top:-40px;
+	background-color:#b5651d ;	
+}
+table.center {
+  /*margin-left: 500px; */
+  margin-top:40px;
+   text-align: center;
+  	font-size:25px;
+}
+.body{
+	background-color:#a95499 ;
+	margin-top:-40px;	
+}
+.input{
+	margin:0px 30px;
+	width:80%;
+	overflow: hidden;
+	font-size: 25px;
+}
+.input-select{
+	margin:0px 0px 0px 0px;
+	width:30%;
+	overflow: hidden;
+	font-size:25px;
+}
+.input-select1{
+	margin:0px 0px 0px 0px;
+	width:20%;
+	overflow: hidden;
+	font-size:25px;
+}
+.input-select2{
+	margin:0px 0px 0px 0px;
+	width:24%;
+	overflow: hidden;
+	font-size:25px;
+}
+.input-radio{
+	margin:0px 0px 0px 0px;
+	width:10%;
+	overflow: hidden;
+}
+.input-radio-margin{
+	margin:0px 200px 0px 0px;
+}
+.input-select3{
+	margin:0px 130px 0px 0px;
+	width:40%;
+	overflow: hidden;
+	font-size:25px;
+}
+.input2{
+	background-color: red ;
+	width:30%;
+	font-size: 25px;
+		/*float:right;*/
+}
+.input21{
+background-color:green;
+width:30%;
+margin-left: 180px;
+font-size: 25px;
+/*position: relative;
+float:right;*/
+}
+.footer{
+	margin-top:-17px;
+	background-color:#b5651d ;	
+}

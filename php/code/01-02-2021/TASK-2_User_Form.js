@@ -1,14 +1,41 @@
+// validation for terms and condition
+function acceptcondition(checkbox){
+	if (checkbox.checked) {
+		accept = true;
+		// alert("Yes");
+ 		buttonshow();
+	}
+	else {
+		accept = false;
+		// alert("not");
+		btninvisible();
+	}
+}
+function buttonshow(){
+	if (accept) {
+		document.getElementById('UserSubmit').disabled = false;
+	} 
+}
+function btninvisible(){
+	document.getElementById('UserSubmit').disabled = true;
+}
+
+btninvisible();
+
+
+//validation for form
 function validation(){
-		// alert("fuction call");
+		 // alert("fuction call");
+		 
 var username=document.getElementById('name').value;
 // alert(username);
 if(username == ""){
-	// alert("this call");
+// 	// alert("this call");
 	document.getElementById('span_name').innerHTML =" ** Please fill the username field";
 	return false;
 	}
 if((username.length <= 2) || (username.length > 20)) {
-	// salert("this call");
+	// alert("this call");
 	document.getElementById('span_name').innerHTML =" ** Username length must be between 2 and 20";
 	return false;	
 	}
@@ -28,9 +55,40 @@ if(password == ""){
 	return false;	
 	}
 
+var gender=document.UserForm.gender.value;
+ if(gender==""){
+ 	document.getElementById('span_gender').innerHTML =" ** Please Check gender";
+	return false;
+ }
+
 var address=document.getElementById('address').value;
 if(address == ""){
 	document.getElementById('span_address').innerHTML =" ** Please fill the address field";
+	return false;
+}
+if(!isNaN(address)){
+	document.getElementById('span_address').innerHTML =" ** only characters are allowed";
+	return false;
+	}
+
+var Month=document.getElementById('Month').value;
+if(Month=="none" ){
+	alert("select");
+	document.getElementById('span_Month').innerHTML =" ** Please select Month";
+	alert("select2");
+	return false;
+}
+var Day=document.getElementById('Day').value;
+if(Day=="none"){
+	alert("selectday");
+	document.getElementById('span_Month').innerHTML =" ** Please select Day";
+	alert("selectday3");
+	return false;
+}
+var Year=document.getElementById('Year').value;
+if(Year=="none"){
+	// alert("select");
+	document.getElementById('span_Month').innerHTML =" ** Please select Year";
 	return false;
 }
 
@@ -49,33 +107,17 @@ var game = [];
         // alert("pick atlest one game");
         return false;
     }
-var gender=document.UserForm.gender.value;
- if(gender==""){
- 	document.getElementById('span_gender').innerHTML =" ** Please Check gender";
+var MaritalStatus=document.UserForm.MaritalStatus.value;
+ if(MaritalStatus==""){
+ 	document.getElementById('span_maritalstatus').innerHTML =" ** Please Check Marital Status";
 	return false;
  }
 
-var age=document.getElementById('age').value;
-if(age=="none"){
-	// alert("select");
-	document.getElementById('span_age').innerHTML =" ** Please Check age group";
-	return false;
-}
-var file=document.getElementById('fileupload').value;
-if(file==""){
-	document.getElementById('span_file').innerHTML =" ** Please upload file";
-	return false;
-}
+
 }
 function validatename(id){
     var name =document.getElementById(id);
     if(name.value.length >=0){
         document.getElementById('span_name').style.display="none";
-    }
-}
-function validatepassword(id) {
-	var name =document.getElementById(id);
-    if(name.value.length >=0){
-        document.getElementById('span_password').style.display="none";
     }
 }

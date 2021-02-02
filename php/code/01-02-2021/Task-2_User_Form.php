@@ -1,105 +1,46 @@
-<?php
-if(isset($_POST['agree'])){
-	
-	if(isset($_POST['name']) && isset($_POST['password']) && isset($_POST['address']) && isset($_POST['game']) && isset($_POST['gender']) && isset($_POST['MaritalStatus']) &&isset($_POST['Day']) && isset($_POST['Month']) && isset($_POST['Year'])){
-		if(!empty($_POST['name']) && !empty($_POST['password']) && !empty($_POST['address']) && !empty($_POST['game']) && !empty($_POST['gender']) && !empty($_POST['MaritalStatus']) && !empty($_POST['Day']) && !empty($_POST['Month']) && !empty($_POST['Year'])){
-				$name=$_POST['name'];
-				$password=$_POST['password'];
-				$address=$_POST['address'];
-				$Day=$_POST['Day'];
-				$Month=$_POST['Month'];
-				$Year=$_POST['Year'];
-				$MaritalStatus=$_POST['MaritalStatus'];
-				$game=$_POST['game'];
-				$gender=$_POST['gender'];
-				
-				echo "Welcome, ".$name."!!!!<br>";
-				echo "password: ".$password."<br>";
-				echo "address: ".$address."<br>";
-				echo "gender: ".$gender."<br>";
-				echo "Date of Birth: ".$Day." ".$Month." ".$Year."<br>";
-				echo "Select Game :<br>";
-				foreach($game as $value){
-					echo $value." , ";
-				}
-				echo "<br>Marital Status : ".$MaritalStatus;
-		}else{
-				$name="";
-				$password="";
-				$address="";
-				$Day="";
-				$Month="";
-				$Year="";
-				$MaritalStatus="";
-				$game="";
-				$gender="";
-		}
-	}else{
-				$name="";
-				$password="";
-				$address="";
-				$Day="";
-				$Month="";
-				$Year="";
-				$MaritalStatus="";
-				$game="";
-				$gender="";
-	}
-}else{
-	echo "please check terms and condition";
-				$name="";
-				$password="";
-				$address="";
-				$Day="";
-				$Month="";
-				$Year="";
-				$MaritalStatus="";
-				$game="";
-				$gender="";
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>TASK-2 USER FORM</title>
 	<link rel="stylesheet" type="text/css" href="TASK-2_User_Form.css">
+	
 </head>
 <body>
 <div class="box">
 	<div class="inner-box">
 		<fieldset>
 			<legend align="center">USER FORM</legend>
-			<form action="TASK-2_User_Form.php" method="post">
+			<form action="TASK-2_User_FormProcess.php"  name="UserForm"  method="post" onsubmit="return validation()">
 				<table>
 					<tr>
 						<td><ul><li><label>Enter Name</label></li></ul>
 						</td>
-						<td><input type="text" name="name" id="name"></td>	
+						<td><input type="text" name="name" id="name" pattern="[A-Za-z].{2,}" title="Please write your name more than 2 letter" class="input"><br><span id="span_name" class="red"></td>	
 					</tr>						
 					<tr>
 						<td><ul><li><label>Enter Password</label></li></ul>
 						</td>
-						<td><input type="text" name="password" id="password"></td>
+						<td><input type="text" name="password" id="password" class="input" pattern="(?=.*[!@#$%^&*()_+]).{6,}" title="Must contain at least one special symbol and more than six characters"><br><span id="span_password" class="red"></span></td>
 					</tr>		
 					
 					<tr>
 						<td><ul><li><label>Gender</label></li></ul>
 						</td>
-						<td><input type="radio" name="gender" value="Male" id="gender">Male<input type="radio" name="gender" value="Female" id="gender">Female</td>
+						<td><input type="radio" name="gender" value="Male" id="gender" class="input-radio">Male<input type="radio" name="gender" value="Female" id="gender" class="input-radio">Female <br><span id="span_gender" class="red"> </span> </td>
 					</tr>
 
 					<tr>
 						<td><ul><li><label>Enter Address</label></li></ul>
 						</td>
-						<td><textarea cols="20" rows="2" name="address" id="address"></textarea></td>
+						<td><textarea cols="20" rows="2" name="address" id="address" class="input"></textarea><br><span id="span_address" class="red"> </td>
 					</tr>
 
 					<tr>
 						<td><ul><li><label>D.O.B</label></li></ul>
 						</td>
 						<td>
-							<select name="Month" id="Month">
-							
+							<select name="Month" id="Month" class="input-select input-select-margin">
+							<option selected hidden disabled value="none">MONTH</option>
 							<option value="Jan">Jan</option>
 							<option value="Feb">Feb</option>
 							<option value="March">March</option>
@@ -113,8 +54,9 @@ if(isset($_POST['agree'])){
 							<option value="November">Nov</option>
 							<option value="December">Dec</option>
 						</select>
-						<select name="Day" id="Day">
-							
+						
+						<select name="Day" id="Day" class="input-select1">
+							<option selected hidden disabled value="none" >DAY</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -147,8 +89,9 @@ if(isset($_POST['agree'])){
 							<option value="30">30</option>
 							<option value="31">31</option>
 						</select>
-						<select name="Year" id="Year">
-							
+						
+						<select name="Year" id="Year" class="input-select2">
+							<option selected hidden disabled value="none">YEAR</option>
 							<option value="2021">2021</option>
 							<option value="2020">2020</option>
 							<option value="2019">2019</option>
@@ -174,6 +117,7 @@ if(isset($_POST['agree'])){
 							<option value="1999">1999</option>
 							<option value="1998">1998</option>
 						</select>
+							<br><span id="span_Month" class="red"> 
 						</td>
 					</tr>
 
@@ -184,24 +128,25 @@ if(isset($_POST['agree'])){
 							<input type="checkbox" name="game[]" value="Hockey">Hockey
 							<input type="checkbox" name="game[]" value="Football">Football	
 							<input type="checkbox" name="game[]" value="Cricket">Cricket
-							<input type="checkbox" name="game[]" value="Cricket">VolleyBall
+							<input type="checkbox" name="game[]" value="VolleyBall">VolleyBall<br><span id="span_selectgame" class="red"> </span> 
 						</td>
 					</tr>
 
 					<tr>
 						<td><ul><li><label>Marital Status</label></li></ul>
 						</td>
-						<td><input type="radio" name="MaritalStatus" id="MaritalStatus" value="Married">Married<input type="radio" id="MaritalStatus"name="MaritalStatus" value="Unmarried">Unmarried</td>
+						<td><input type="radio" name="MaritalStatus" id="MaritalStatus" value="Married" class="input-radio">Married<input type="radio" id="MaritalStatus"name="MaritalStatus" value="Unmarried" class="input-radio">Unmarried <br><span id="span_maritalstatus" class="red"> </span> </td>
+						
 					</tr>
 
 					<tr>
 						<td></td>
-						<td><input type="submit" name="submit" value="Submit">&nbsp;<input type="reset" name="reset"></td></td>
+						<td><input type="submit" name="submit" value="Submit" id ="UserSubmit">&nbsp;<input type="reset" name="reset"></td></td>
 					</tr>
 
 					<tr>
 						<td></td>
-						<td><input type="checkbox" name="agree">I accept this agreement</td>	
+						<td><input type="checkbox" name="accept" id="accept" onclick="acceptcondition(this)"><b>I accept all terms and condition</b></td>	
 					</tr>
 				</table>
 			</form>
@@ -209,4 +154,5 @@ if(isset($_POST['agree'])){
 	</div>
 </div>
 </body>
+<script type="text/javascript" src="TASK-2_User_Form.js"></script>
 </html>
