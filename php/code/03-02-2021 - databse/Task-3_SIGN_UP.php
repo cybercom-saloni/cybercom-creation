@@ -81,8 +81,8 @@ if(isset($_POST['submit'])){
 <html>
 <head>
 	<title>TASK-3 SIGN UPFORM</title>
-	<link rel="stylesheet" type="text/css" href="TASK-3_SIGN_UP.css">
-	<script type="text/javascript" src="TASK-3_SIGN_UP.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/TASK-3_SIGN_UP.css">
+	<script type="text/javascript" src="js/TASK-3_SIGN_UP.js"></script>
 </head>
 <body onload="disablebtn()">
 		<div class="box">

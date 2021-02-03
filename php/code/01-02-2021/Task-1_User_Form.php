@@ -1,10 +1,11 @@
 <?php
-require 'fileupload.php';
+
 // echo $_SERVER['REQUEST_METHOD'];
 if(isset($_POST['submit']))	{
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		if(isset($_POST['name']) && isset($_POST['password']) && isset($_POST['age']) && isset($_POST['game']) &&isset($_POST['address']) && isset($_POST['gender'])&& isset($_FILES["filetoupload"]["name"])){
 				if(!empty($_POST['name']) && !empty($_POST['password']) && !empty($_POST['age']) && !empty($_POST['game']) && !empty($_POST['address']) && !empty($_POST['gender']) && !empty($_FILES["filetoupload"]["name"])){
+					require 'fileupload.php';
 					$name=$_POST['name'];
 					$password=$_POST['password'];
 					$address=$_POST['address'];
@@ -71,8 +72,8 @@ if(isset($_POST['submit']))	{
 <html>
 <head>
 	<title>TASK-1 USER FORM</title>
-	<link rel="stylesheet" type="text/css" href="TASK-1_User_Form.css">
-	<script type="text/javascript" src="TASK-1_User_Form.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/TASK-1_User_Form.css">
+	<script type="text/javascript" src="js/TASK-1_User_Form.js"></script>
 </head>
 <body>
 <div class="wrapper">

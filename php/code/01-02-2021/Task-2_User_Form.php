@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>TASK-2 USER FORM</title>
-	<link rel="stylesheet" type="text/css" href="TASK-2_User_Form.css">
+	<link rel="stylesheet" type="text/css" href="css/TASK-2_User_Form.css">
 	
 </head>
 <body>
@@ -154,5 +154,5 @@
 	</div>
 </div>
 </body>
-<script type="text/javascript" src="TASK-2_User_Form.js"></script>
+<script type="text/javascript" src="js/TASK-2_User_Form.js"></script>
 </html>

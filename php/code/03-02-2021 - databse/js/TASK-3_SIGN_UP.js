@@ -93,7 +93,7 @@ if(mobileNumber == ""){
 			}
 
 var emails=document.getElementById('email').value;
-// alert(emails);
+alert(emails);
 if(emails == ""){
 				document.getElementById('emailids').innerHTML =" ** Please fill the email idx` field";
 				return false;

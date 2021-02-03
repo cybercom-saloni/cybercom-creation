@@ -89,12 +89,12 @@ if(isset($_POST['submit']))	{
 <html>
 <head>
 	<title>TASK-1 USER FORM</title>
-	<link rel="stylesheet" type="text/css" href="TASK-1_User_Form.css">
-	<script type="text/javascript" src="TASK-1_User_Form.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/TASK-1_User_Form.css">
+	<script type="text/javascript" src="js/TASK-1_User_Form.js"></script>
 </head>
 <body>
 <div class="wrapper">
-	<form action="TASK-1_User_Form.php"  name="UserForm" method="post" enctype="multipart/form-data" onsubmit="return validation()">
+	<form action="TASK-1_User_Form_Edit.php"  name="UserForm" method="post" enctype="multipart/form-data" onsubmit="return validation()">
 			<table border="2px" class="center">
 				<tr class="backcolor-yellow">
 					<td colspan="2" class="text-red">USER FORM</td>
