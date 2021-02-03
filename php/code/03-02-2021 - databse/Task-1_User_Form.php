@@ -1,12 +1,16 @@
 <?php
-require 'fileupload.php';
+
+require 'databaseconnection.php';
 // echo $_SERVER['REQUEST_METHOD'];
 if(isset($_POST['submit']))	{
+	var_dump($_POST);
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		if(isset($_POST['name']) && isset($_POST['password']) && isset($_POST['age']) && isset($_POST['game']) &&isset($_POST['address']) && isset($_POST['gender'])&& isset($_FILES["filetoupload"]["name"])){
 				if(!empty($_POST['name']) && !empty($_POST['password']) && !empty($_POST['age']) && !empty($_POST['game']) && !empty($_POST['address']) && !empty($_POST['gender']) && !empty($_FILES["filetoupload"]["name"])){
+					require 'fileupload.php';
 					$name=$_POST['name'];
 					$password=$_POST['password'];
+					$password1=md5($password);
 					$address=$_POST['address'];
 					$age=$_POST['age'];
 					$game=$_POST['game'];
@@ -27,7 +31,7 @@ if(isset($_POST['submit']))	{
 							
 						}else {    
 							echo "Welcome, ".$name."!!!!<br>";
-							echo "password: ".$password."<br>";
+							echo "password: ".$password1."<br>";
 							echo "address: ".$address."<br>";
 							echo "age: ".$age."<br>";
 							echo "gender: ".$gender."<br>";
@@ -44,6 +48,17 @@ if(isset($_POST['submit']))	{
 				                    echo ",";
 				                }
 				                $count++;
+							}
+							$game1=implode(',',$game);
+							// echo "<br> new game".$game1;
+							$qry="INSERT INTO `form1_table`(`name`, `password`, `address`, `age`, `gender`,`game`,`picture`) VALUES ('".$name."','".$password1."','".$address."','".$age."','".$gender."','".$game1."','".$_FILES["filetoupload"]["name"]."')";
+							//echo $qry;
+							$rs=mysqli_query($conn,$qry);
+							if($rs){
+								echo "<br>"."insert sucessfull";
+							}
+							else{
+								echo "insert unsucessfull!!";
 							}
 						}
 					}else{

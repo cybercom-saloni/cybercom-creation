@@ -1,0 +1,64 @@
+fieldset{      
+	background-color: #33FF66;
+	width: 90%;
+	border: 2px solid black;
+	align-items:center;
+	margin-top:10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+legend{
+	letter-spacing:2px;
+}
+label{
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+.box{
+	width:600px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:30px;
+	margin-bottom:20px;
+	background-color:#CCFF66;
+}
+.input{
+	margin:0px 30px;
+	width:80%;
+	overflow: hidden;
+	font-size:20px;
+}
+.input-radio{
+	margin:0px 0px 0px 0px;
+	width:10%;
+	overflow: hidden;
+	font-size:20px;
+}
+.input-radio-margin{
+	margin:0px 100px 0px 0px;
+}
+.input-select{
+	margin:0px 0px 0px 0px;
+	width:35%;
+	overflow: hidden;
+	font-size:20px;
+}
+.input-select-margin{
+	margin:0px 0px 0px 30px;
+}
+.input-select1{
+	margin:0px 0px 0px 0px;
+	width:20%;
+	overflow: hidden;
+	font-size:20px;
+}
+.input-select2{
+	margin:0px 0px 0px 0px;
+	width:24%;
+	overflow: hidden;
+	font-size:20px;
+}

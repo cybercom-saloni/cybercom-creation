@@ -1,4 +1,6 @@
 <?php
+
+require 'databaseconnection.php';
 if(isset($_POST['submit'])){
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['lastname']) && isset($_POST['phone']) &&isset($_POST['password']) && isset($_POST['confirmpassword'])  && isset($_POST['Day']) && isset($_POST['Month']) && isset($_POST['gender']) && isset($_POST['country'])){
@@ -10,8 +12,8 @@ if(isset($_POST['submit'])){
 					$email=htmlentities($_POST['email']);
 					$lastname=htmlentities($_POST['lastname']);
 					$phone=htmlentities($_POST['phone']);
-					$password=htmlentities($_POST['password']);
-					$confirmpassword=htmlentities($_POST['confirmpassword']);
+					$password=md5($_POST['password']);
+					$confirmpassword=md5($_POST['confirmpassword']);
 					$Day=$_POST['Day'];
 					$Month=$_POST['Month'];
 					$Year=$_POST['Year'];
@@ -28,12 +30,13 @@ if(isset($_POST['submit'])){
 							}elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 								$ErrMsg = "Email is invalid."; 
 								 echo "<script type='text/javascript'>alert('$ErrMsg');</script>";
-							}elseif(!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{8,12}$/', $password)){
+							}elseif(!preg_match('/[0-9A-Za-z!@#$%]{8,12}/', $password)){
 								// $ErrMsg = ""; 
 								 echo "<script type='text/javascript'>alert('Password is invalid.');</script>";
-							}elseif(!preg_match('/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{8,12}$/', $confirmpassword)){
+
+							}elseif(!preg_match('/[0-9A-Za-z!@#$%]{8,12}/', $confirmpassword)){
 								// $ErrMsg = ""; 
-								 echo "<script type='text/javascript'>alert('Password is invalid.');</script>";
+								 echo "<script type='text/javascript'>alert('CPassword is invalid.');</script>";
 							}elseif(!preg_match('/^[6-9][0-9]{9}$/', $phone)){
 								// $ErrMsg = ""; 
 								 echo "<script type='text/javascript'>alert('phone number is invalid.');</script>";
@@ -41,7 +44,16 @@ if(isset($_POST['submit'])){
 								echo "<script type='text/javascript'>alert('Password is not match.');</script>";
 
 							}else{//pattern matching
-								echo "welcome ".$name." ".$lastname."!!!<br>email: ".$email."<br>phone : ".$phone."<br>password : ".md5($password)."<br>confirmpassword : ".md5($confirmpassword)."<br>DOB : ".$Day."-".$Month."-".$Year."<br>gender: ".$gender."<br>country :".$country;
+								echo "welcome ".$name." ".$lastname."!!!<br>email: ".$email."<br>phone : ".$phone."<br>password : ".$password."<br>confirmpassword : ".$confirmpassword."<br>DOB : ".$Day."-".$Month."-".$Year."<br>gender: ".$gender."<br>country :".$country;
+								$qry="INSERT INTO `reg_table`(`firstname`, `lastname`, `password`, `confirmpassword`, `gender`, `email`, `phone`, `DOB`) VALUES ('".$name."','".$lastname."','".$password."','".$confirmpassword."','".$gender."','".$email."','".$phone."','".$Day.'-'.$Month.'-'.$Year."')";
+							echo $qry;
+							$rs=mysqli_query($conn,$qry);
+							if($rs){
+								echo "<br>"."insert sucessfull";
+							}
+							else{
+								echo "insert unsucessfull!!";
+							}
 							}
 				}else{// agreement
 					echo '<script>alert("Please accept terms and condition.");</script>';
