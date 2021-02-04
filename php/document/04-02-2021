@@ -1,0 +1,83 @@
+---->>connecting with database
+	folder:- pratice/04-02-2021/databaseconnection.php
+	create connection
+	$connection=mysqli_connect('servername','username','password');
+
+	 connection with database
+	$database=mysqli_select_db($connection,$databasename);
+
+
+--->>SELECT QUERY:-
+1. require 'connectionfile';
+
+2. Select query
+	folder:- pratice/04-02-2021/select.php
+	$query="SELECT * FROM `food`";
+
+3. Select query in descending order
+	folder:- pratice/04-02-2021/selectDESC.php
+	$query="SELECT * FROM `food` ORDER BY `id` DESC ";
+
+4. Select query in ascending order
+	folder:- pratice/04-02-2021/selectASC.php
+	$query="SELECT * FROM `food` ORDER BY `id` ASC";
+
+5. Select query with WHERE condition
+	folder:- pratice/04-02-2021/selectWHERE.php
+	$query="SELECT * FROM `food` WHERE `status`=0";
+
+6. Select query with WHERE condition with AND operator
+	folder:- pratice/04-02-2021/select-WHERE-AND.php
+	$query="SELECT * FROM `food` WHERE `status`=0 AND `calories`=1000";
+
+7.Select query with WHERE condition with OR operator
+	folder:- pratice/04-02-2021/select-WHERE-OR.php
+	$query="SELECT * FROM `food` WHERE `status`=0 OR `calories`=1000";
+
+
+8.Select query in form WHERE based on food type it display the details of food.
+folder:- pratice/04-02-2021/select-based_on_user_type.php
+
+
+9. Select query in descending order with limit of 2
+	folder:- pratice/04-02-2021/selectDESC_LIMIT.php
+	$query="SELECT * FROM `food` ORDER BY `id` DESC ";
+
+10.Insert query:-
+	$query="INSERT INTO `ip_address` (`ip_address`) VALUES ('$ip')";
+
+11.update query:-
+	$query_update="UPDATE `hit_count` SET `hitcount`='$count'";
+
+10. Hit counter:-
+	increment of hit count variable if a new ip address is found.
+
+	requirement:-needs two table :-
+				a.hit_count:-update the count value when new ip address is found.
+				b.hit_ip_address:-record of all ip address that visit the site.
+
+
+	inculdes:-SELECT INSERT AND UPDATE query
+	folder:- pratice/04-02-2021/hitcounter.php
+
+11.LEFT JOIM:-
+	if we want to display data on left ,even if it does not have value at right side.
+	folder:- pratice/04-02-2021/LEFT-JOIN.php
+
+	$query="SELECT `pet_people`.`name`,`pet`.`pet` FROM `pet` LEFT JOIN `pet_people` ON `pet`.`peopleid`=`pet_people`.`pid`";
+
+
+12.RIGHT JOIM:-
+	if we want to display data on right ,even if it does not have value at left side.
+	folder:- pratice/04-02-2021/RIGHT-JOIN.php
+
+
+	$query="SELECT `pet_people`.`name`,`pet`.`pet` FROM `pet` RIGHT JOIN `pet_people` ON `pet`.`peopleid`=`pet_people`.`pid`";
+
+13.JOIN:-
+	returns only those values which exists or found in each table.
+	folder:- pratice/04-02-2021/JOIN.php
+
+
+	$query="SELECT `pet_people`.`name`,`pet`.`pet` FROM `pet` JOIN `pet_people` ON `pet`.`peopleid`=`pet_people`.`pid`";
+
