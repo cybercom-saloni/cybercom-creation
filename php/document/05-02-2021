@@ -1,0 +1,48 @@
+--->>>LIKE OPERATOR
+1.query which retrives the element before special character start and its matching (full name)
+
+folder:- pratice/05-02-2021/search-start.php
+
+$query="SELECT `name` FROM `pet_people` WHERE `name` LIKE '%maheshwari'";
+
+2.query which retrives the element after special character start and its matching (full name)
+$query="SELECT `name` FROM `pet_people` WHERE `name` LIKE 'saloni%'";
+folder:- pratice/05-02-2021/search-end.php
+
+3.query which retrives the element after and before special character start and its matching 
+$query="SELECT `name` FROM `pet_people` WHERE `name` LIKE %loni%";
+folder:- pratice/05-02-2021/search-fullsearch.php
+
+4.query which retrives the element in the place of blank space
+$query="SELECT `name` FROM `pet_people` WHERE `name` LIKE '__loni'";
+folder:- pratice/05-02-2021/search-underscore.php
+
+5.search using the form
+folder:- pratice/05-02-2021/search-form.php
+
+--->>SELECT DISTINCT
+SELECT DISTINCT keyword selects distinct values from database.
+folder:- pratice/05-02-2021/select-distinct.php
+$query="SELECT DISTINCT `name` FROM `pet_people`";
+
+--->>for knowing current file full path
+$_SERVER['SCRIPT_FILENAME']
+folder:- pratice/05-02-2021/login-currentfilename.php
+
+
+--->>for knowing current file name only
+$_SERVER['SCRIPT_NAME']
+folder:- pratice/05-02-2021/login-currentfilename.php
+
+-->login form with session
+folder:- pratice/05-02-2021/login-form.php
+
+--->login form with cookie and session
+folder:- pratice/05-02-2021/login-form-cookie.php
+
+--->>logout
+to know the page where we are redirected from:-$_SERVER['HTTP_REFERER'];
+folder:- pratice/05-02-2021/login-logout.php
+
+--->>protect against sql injection
+$query="SELECT * FROM `form1_table` WHERE name='".mysqli_real_escape_string($connection,$username)."' AND password='".mysqli_real_escape_string($connection,$password)."'";
