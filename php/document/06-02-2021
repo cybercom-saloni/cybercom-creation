@@ -1,0 +1,64 @@
+---->>EXCEPTION HANDLING:-
+handles error in the program.
+
+
+1.try,throw,catch-->
+folder:- pratice/06-02-2021/Exception-try,throw,catch.php
+
+2.Custom Exception-->
+More than one Exception
+folder:- pratice/06-02-2021/Exception-customException.php
+folder:- pratice/06-02-2021/Exception-customException1.php
+
+--->>OOP:-
+class:-class is like a object 
+properties:-it is like the variable we change it also or we can create static value.
+method:-it is like somewhat functions.it can be public private protected.
+public:-it can be accessed anywhere inside the code.
+private:-it can not be accessed anywhere.
+protected:-it means it can be accessed in class itself and methods can be accessed.
+new:-creates new instance of class.
+
+
+Return a Property Value:-
+---->folder:- pratice/06-02-2021/oop-changing-property-value.php
+
+Return a Property Value:-
+---->folder:-
+ pratice/06-02-2021/oop-changing-property-value-try-catch.php
+ 
+PROTECTED:-
+---->folder:-
+ pratice/06-02-2021/oop-protected.php
+
+ PUBLIC:-
+ ---->folder:-
+ pratice/06-02-2021/oop-public.php
+
+ PRIVATE:-
+  ---->folder:-
+ pratice/06-02-2021/oop-private.php
+
+ Constants:::----
+ constant is not a variable it is assigned value which cannot be changed.
+  ---->folder:-
+ pratice/06-02-2021/oop-constant.php
+
+Constructor:---
+  ---->folder:-
+ pratice/06-02-2021/oop-constructor-noarugment.php
+
+---->folder:-
+ pratice/06-02-2021/oop-constructor-with-arugment.php
+
+Multiple instance of class:-
+---->folder:-
+ pratice/06-02-2021/oop-multiple-instance-of-class.php
+
+ inheritance:-
+ ---->folder:-
+ pratice/06-02-2021/inheritance.php
+
+ database connection:-
+  ---->folder:-
+ pratice/06-02-2021/databaseconnection.php
