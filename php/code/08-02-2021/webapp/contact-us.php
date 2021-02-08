@@ -29,7 +29,7 @@
       </thead>
        
         <?php
-          require 'databaseconnection.php';
+          require 'connection/databaseconnection.php';
           $start=0;
           $limit = 5; 
           $page="";
@@ -123,7 +123,8 @@
                 
                    if(response=="success"){
                     // alert(response);
-                 swal("Success","INSERTED","success");
+                 swal("Success","Deleted","success");
+                  window.setTimeout(function(){location.reload()},3000);
                   // location.reload();
                     }else{
                     // alert(response);

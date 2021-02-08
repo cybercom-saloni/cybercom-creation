@@ -73,6 +73,38 @@ if (dateTime == "" || dateTime == null) {
     return valid = false;
 }
 }
+function validatename(id){
+    var name =document.getElementById(id);
+    if(name.value.length >=0){
+        document.getElementById('span_name').style.display="none";
+    }
+}
+function validate_email(id){
+	var name =document.getElementById(id);
+    if(name.value.length >=0){
+        document.getElementById('emailids').style.display="none";
+    }
+}
+function validate_phone(id) {
+	var name =document.getElementById(id);
+    if(name.value.length >=0){
+        document.getElementById('span_mobileno').style.display="none";
+    }
+}
+
+function validate_date(id){
+	var name =document.getElementById(id);
+    if(name.value.length >=0){
+        document.getElementById('span_created').style.display="none";
+    }
+}
+function validate_employee(id) {
+	var name =document.getElementById(id);
+    if(name.value.length >=0){
+        document.getElementById('span_employee').style.display="none";
+    }
+}
+
 
 
 

@@ -1,9 +1,9 @@
 <?php
-require 'databaseconnection.php';
-$name=$_POST['name'];
-$email=$_POST['email'];
-$mobileno=$_POST['mobileno'];
-$employee=$_POST['employee'];
+require 'connection/databaseconnection.php';
+$name=htmlentities($_POST['name']);
+$email=htmlentities($_POST['email']);
+$mobileno=htmlentities($_POST['mobileno']);
+$employee=htmlentities($_POST['employee']);
 $created=$_POST['created'];
 // echo $_SERVER["REQUEST_METHOD"];
 $datecreated=date('Y-m-d\TH:i:s',strtotime($created));

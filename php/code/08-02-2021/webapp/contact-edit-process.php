@@ -1,11 +1,11 @@
 <?php
-require 'databaseconnection.php';
+require 'connection/databaseconnection.php';
 $id=$_GET['id'];
 // echo $id;
-$name=$_POST['name'];
-$email=$_POST['email'];
-$mobileno=$_POST['mobileno'];
-$employee=$_POST['employee'];
+$name=htmlentities($_POST['name']);
+$email=htmlentities($_POST['email']);
+$mobileno=htmlentities($_POST['mobileno']);
+$employee=htmlentities($_POST['employee']);
 $created=$_POST['created'];
 $datecreated=date('Y-m-d\TH:i:s',strtotime($created));
 if(isset($_POST['submit'])){

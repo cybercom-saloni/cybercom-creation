@@ -1,5 +1,5 @@
 <?php
-require 'databaseconnection.php';
+require 'connection/databaseconnection.php';
 if($_POST['id'])
 {
 $id=mysqli_real_escape_string($connection,$_POST['id']);

@@ -1,5 +1,5 @@
 <?php
-require 'databaseconnection.php';
+require 'connection/databaseconnection.php';
 $id=$_GET['id'];
 if(isset($_GET['id'])){
   $query="SELECT * FROM `webapp` WHERE id='".mysqli_real_escape_string($connection,$id)."'";
@@ -48,7 +48,7 @@ if(isset($_GET['id'])){
       </div>
       <div class="row">
         <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-          <input type="text" name="name" id="name" placeholder="John Doe" class="form-control" value="<?php echo $name; ?>">
+          <input type="text" name="name"  id="name" placeholder="John Doe" class="form-control" value="<?php echo $name; ?>">
            <br><span id="span_name" class="red"></span>
         </div>
 
@@ -69,7 +69,7 @@ if(isset($_GET['id'])){
 
       <div class="row">
         <div class="col-xl-6 col-md-6 col-sm-6 col-6">
-          <input type="text" name="mobileno" id="mobileno" placeholder="9412134421" class="form-control" value="<?php echo $mobileno; ?>">
+          <input type="text" name="mobileno" id="mobileno" placeholder="9412134421" class="form-control"  value="<?php echo $mobileno; ?>">
           <br><span id="span_mobileno" class="red"></span>
         </div>
         <div class="col-xl-6 col-md-6 col-sm-6 col-6">
