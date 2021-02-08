@@ -20,12 +20,19 @@ if(isset($_POST['submit'])){
 					// echo "<br>".$_SESSION['username'];
 					// echo "<br>".$id;
 					if(isset($_POST['remember'])){
-						setcookie("user",$username,time()+(86400*30),"/");
-						setcookie("password",$password,time()+(86400*30),"/");
-						// echo "cookie set";
+						$cookiename="user";
+						$cookiepass="password";
+						setcookie($cookiename,$username,time()+(60),"/");
+						setcookie($cookiepass,$password,time()+(60),"/");
+						// setcookie("user",$us,time()+(86400*30),"/");
+						echo "cookie set";
+
+
 					}
+
 				}
-			}else{
+			}
+			else{
 				echo "INVALID USER";
 			}
 
@@ -38,6 +45,13 @@ if(isset($_POST['submit'])){
 }else{
 	header("location:login-form-cookie.php");
 }
+
+if(isset($_COOKIE[$cookiename])){
+	echo "<h1>proper</h1>";
+}else{
+	echo "cookie expired";
+	header("Location:login-form-cookie.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,7 +59,7 @@ if(isset($_POST['submit'])){
 	<title></title>
 </head>
 <body>
-	<H1>WELCOME!!!<?PHP echo $_SESSION['username'];?></H1>
+	<H1>WELCOME!!!<?PHP echo $_SESSION['username'] ;?></H1>
 <a href="login-logout.php">LOGOUT</a>
 </body>
 </html>

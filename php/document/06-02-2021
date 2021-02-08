@@ -3,12 +3,12 @@ handles error in the program.
 
 
 1.try,throw,catch-->
-folder:- pratice/06-02-2021/Exception-try,throw,catch.php
+folder:- pratice/06-02-2021/oopconcept/Exception-try,throw,catch.php
 
 2.Custom Exception-->
 More than one Exception
-folder:- pratice/06-02-2021/Exception-customException.php
-folder:- pratice/06-02-2021/Exception-customException1.php
+folder:- pratice/06-02-2021/oopconcept/Exception-customException.php
+folder:- pratice/06-02-2021/oopconcept/Exception-customException1.php
 
 --->>OOP:-
 class:-class is like a object 
@@ -21,44 +21,50 @@ new:-creates new instance of class.
 
 
 Return a Property Value:-
----->folder:- pratice/06-02-2021/oop-changing-property-value.php
+---->folder:- pratice/06-02-2021/oopconcept/oop-changing-property-value.php
 
 Return a Property Value:-
 ---->folder:-
- pratice/06-02-2021/oop-changing-property-value-try-catch.php
+ pratice/06-02-2021/oopconcept/oop-changing-property-value-try-catch.php
  
 PROTECTED:-
 ---->folder:-
- pratice/06-02-2021/oop-protected.php
+ pratice/06-02-2021/oopconcept/oop-protected.php
 
  PUBLIC:-
  ---->folder:-
- pratice/06-02-2021/oop-public.php
+ pratice/06-02-2021/oopconcept/oop-public.php
 
  PRIVATE:-
   ---->folder:-
- pratice/06-02-2021/oop-private.php
+ pratice/06-02-2021/oopconcept/oop-private.php
 
  Constants:::----
  constant is not a variable it is assigned value which cannot be changed.
   ---->folder:-
- pratice/06-02-2021/oop-constant.php
+ pratice/06-02-2021/oopconcept/oop-constant.php
 
 Constructor:---
   ---->folder:-
- pratice/06-02-2021/oop-constructor-noarugment.php
+ pratice/06-02-2021/oopconcept/oop-constructor-noarugment.php
 
 ---->folder:-
- pratice/06-02-2021/oop-constructor-with-arugment.php
+ pratice/06-02-2021/oopconcept/oop-constructor-with-arugment.php
 
 Multiple instance of class:-
 ---->folder:-
- pratice/06-02-2021/oop-multiple-instance-of-class.php
+ pratice/06-02-2021/oopconcept/oop-multiple-instance-of-class.php
 
  inheritance:-
  ---->folder:-
- pratice/06-02-2021/inheritance.php
+ pratice/06-02-2021/oopconcept/inheritance.php
 
  database connection:-
   ---->folder:-
- pratice/06-02-2021/databaseconnection.php
+ pratice/06-02-2021/oopconcept/databaseconnection.php
+
+
+AJAX:-
+Asynchronous JavaScript And XML
+we can process data behind through javascript and html.
+getting the data without refreshing the page.
