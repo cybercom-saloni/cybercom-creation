@@ -1,5 +1,4 @@
 <?php
-
 require 'databaseconnection.php';
 // echo $_SERVER['REQUEST_METHOD'];
 if(isset($_POST['submit']))	{
