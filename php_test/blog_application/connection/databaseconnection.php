@@ -5,16 +5,16 @@ $password="";
 $dbname="blog_application";
 
 //create connection
-$conn=mysqli_connect($servername,$username,$password);
+$connection=mysqli_connect($servername,$username,$password);
 
 //check connection
-if(!$conn)
+if(!$connection)
 {
 	die("connection failed: ".mysql_connect_error());
 }
 // echo "connected sucessfully  ";
 
-$db=mysqli_select_db($conn,$dbname);
+$db=mysqli_select_db($connection,$dbname);
 
 if($db)
 {

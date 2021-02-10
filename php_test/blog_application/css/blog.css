@@ -1,0 +1,28 @@
+.box_edit{
+  height:20px;
+  width:10px;
+  background-color:#00BFFF;
+  justify-content:flex-end;
+  width:40px;
+}
+.box_delete{
+  margin-left:10px;
+  display:flex;
+  justify-content:flex-end;
+  width:40px;
+  background-color:#CD2626;
+}
+.white{
+  color:white;
+}
+.glyphicon {
+    font-size: 20px;
+}
+
+.table-heading-color{
+  background-color: #C7C7C7;
+}
+.red{
+  color:red;
+  font-size:16px;
+}
