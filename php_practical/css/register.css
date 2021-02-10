@@ -1,0 +1,10 @@
+.container{
+	border:1px solid black;
+	height:500px;
+	width:800px;
+}
+.red{
+	color:red;
+	font-size:12px;
+	font-weight:bold;
+}
