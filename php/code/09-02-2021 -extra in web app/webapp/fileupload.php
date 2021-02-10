@@ -13,14 +13,14 @@ if(isset($_POST["submit"]))
 {
 	if($_FILES["filetoupload"]["name"]=="")
 	{
-		echo "no file selected";
+		echo "<script>alert('no file selected')</script>";
 		exit();
 	}
 	$check=getimagesize($_FILES["filetoupload"]["tmp_name"]);
 	if($check!==false)
 	{
 		// var_dump($check);
-		echo "file is an image".$check["mime"].".";
+		echo "file is an image'".$check["mime"].".";
 		$uploadok=1;
 	}
 	else
@@ -33,7 +33,7 @@ if(isset($_POST["submit"]))
 //check if file already exit
 if(file_exists($target_file))
 {
-	echo "<script>alert('sorry,file already exists');</script>";
+	echo "echo file already exists";
 	$uploadok=0;
 	// header("location:TASK-1_User_Form.php");
 }
@@ -48,7 +48,7 @@ if($_FILES["filetoupload"]["size"]>500000)
 //allow file format
 if($imagefiletype!="jpg" && $imagefiletype!="png" && $imagefiletype!="jpeg" && $imagefiletype!="gif")
 {
-	echo "<script>alert(sorry file formate doesn't preg_match(	, subject));</script>";
+	echo "<script>alert('sorry file formate doesn't match'));</script>";
 	$uploadok=0;
 	exit();
 
