@@ -1,0 +1,29 @@
+<?php
+/**
+ * Block_Category_Edit
+ */
+class Block_Customer_Edit extends Block_Core_Template
+{
+    protected $category=null;
+    protected $template=null;
+    
+    function __construct()
+    {
+        $this->setTemplate('./View/Customer/Edit.php');
+    }
+
+    public function getTabContent()
+    {
+        $tabBlock=Mage::getBlock('Block_Customer_Edit_Tabs');
+        $tabs=$tabBlock->getTabs();
+        $tab=$this->getRequest()->getGet('tab',$tabBlock->getDefaultTab());
+        if(!array_key_exists($tab,$tabs))
+        {
+            return null;
+        }
+        $blockClassName=$tabs[$tab]['block'];
+        $block=Mage::getBlock($blockClassName);
+        echo $block->toHtml();
+    }
+}
+?>
