@@ -1,23 +1,21 @@
 <?php 
-namespace Block\Admin\Product\Edit;
-class Tabs extends \Block\Core\Template
+namespace Block\Admin\Customer\Edit;
+class Tab extends \Block\Core\Template
 {
 	protected $tabs=[];
 	protected $defaultTab=null;
 	public function __construct()
 	{
-		$this->setTemplate('./View/Admin/Attribute/Edit/Tab.php');
+		$this->setTemplate('./View/Admin/Customer/Edit/Tab.php');
 		$this->prepareTab();
 	}
 
 	public function prepareTab()
 	{
-		// $this->addTab('product',['label'=>'Information','block'=>'Admin\Product\Edit\Tabs\Information']);
-		// $this->addTab('media',['label'=>'Media','block'=>'Admin\Product\Edit\Tabs\Media']);
-		// $this->addTab('Category',['label'=>'Category','block'=>'Admin\Product\Edit\Tabs\Category']);
-		// $this->addTab('groupPrice',['label'=>'GroupPrice','block'=>'Admin\Product\Edit\Tabs\GroupPrice']);
-		// $this->setDefaultTab('product');
-		// return $this;
+		$this->addTab('PersonalInformation',['label'=>'Personal Information','block'=>'Admin\Customer\Edit\Tabs\PersonalInformation']);
+		$this->addTab('AddressInformation',['label'=>'Address Information','block'=>'Admin\Customer\Edit\Tabs\AddressInformation']);
+		$this->setDefaultTab('PersonalInformation');
+		return $this;
 	}
 
 	public function setDefaultTab($defaultTab)

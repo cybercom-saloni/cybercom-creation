@@ -1,20 +1,21 @@
 <?php 
-namespace Block\Admin\Config\Edit;
-class Tab extends \Block\Core\Template
+namespace Block\Admin\Admin\Edit;
+class Tabs extends \Block\Core\Template
 {
 	protected $tabs=[];
 	protected $defaultTab=null;
 	public function __construct()
 	{
-		$this->setTemplate('./View/Admin/Config/Edit/Tab.php');
+		$this->setTemplate('./View/Admin/Admin/Edit/Tab.php');
 		$this->prepareTab();
 	}
 
 	public function prepareTab()
 	{
-		$this->addTab('Information',['label'=>'Information','block'=>'Admin\Config\Edit\Tabs\Information']);
-		$this->addTab('Configuration',['label'=>'Configuration','block'=>'Admin\Config\Edit\Tabs\Configuration']);
-		$this->setDefaultTab('PersonalInformation');
+		$this->addTab('information',['label'=>'Admin Information','block'=>'Admin\Admin\Edit\Tabs\Information']);
+		$this->addTab('media',['label'=>'Media','block'=>'Admin\Admin\Edit\Tabs\Media']);
+		$this->addTab('gallery',['label'=>'Gallery','block'=>'Admin\Admin\Edit\Tabs\Gallery']);
+		$this->setDefaultTab('information');
 		return $this;
 	}
 
@@ -63,3 +64,4 @@ class Tab extends \Block\Core\Template
 	}
 
 }
+?>
