@@ -4,7 +4,6 @@ var Base = function(){
 };
 Base.prototype = {
     alert : function(){
-        alert('Ronak')
     },
 
     url : null,
